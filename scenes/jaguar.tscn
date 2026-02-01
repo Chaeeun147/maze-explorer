@@ -1,30 +1,30 @@
 [gd_scene load_steps=12 format=3 uid="uid://b7r1gvuetoy42"]
 
-[ext_resource type="Script" uid="uid://bd6txglfenec1" path="res://scripts/jaguar.gd" id="1_tyk5c"]
-[ext_resource type="Texture2D" uid="uid://d3lu0xso1bx1n" path="res://assets/images/jaguar/jaguar sprite.png" id="2_x2xh8"]
+[ext_resource type="Script" uid="uid://bd6txglfenec1" path="res://scripts/Jaguar.gd" id="1_ynsnv"]
+[ext_resource type="Texture2D" uid="uid://d3lu0xso1bx1n" path="res://assets/images/jaguar/jaguar sprite.png" id="2_kfopr"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_05kad"]
-atlas = ExtResource("2_x2xh8")
+atlas = ExtResource("2_kfopr")
 region = Rect2(0, 0, 448, 448)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k2qel"]
-atlas = ExtResource("2_x2xh8")
+atlas = ExtResource("2_kfopr")
 region = Rect2(448, 0, 448, 448)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_spgb4"]
-atlas = ExtResource("2_x2xh8")
+atlas = ExtResource("2_kfopr")
 region = Rect2(896, 0, 448, 448)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tlhb0"]
-atlas = ExtResource("2_x2xh8")
+atlas = ExtResource("2_kfopr")
 region = Rect2(0, 448, 448, 448)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ff5i2"]
-atlas = ExtResource("2_x2xh8")
+atlas = ExtResource("2_kfopr")
 region = Rect2(896, 448, 448, 448)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1hdnr"]
-atlas = ExtResource("2_x2xh8")
+atlas = ExtResource("2_kfopr")
 region = Rect2(0, 896, 448, 448)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lxwe0"]
@@ -61,7 +61,7 @@ radius = 97.04638
 
 [node name="Jaguar" type="Area2D"]
 scale = Vector2(0.255, 0.255)
-script = ExtResource("1_tyk5c")
+script = ExtResource("1_ynsnv")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1

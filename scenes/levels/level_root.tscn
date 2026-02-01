@@ -2,8 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://dtjoxgxt1qteo" path="res://assets/images/backround/sky 5.0.png" id="1_atrx7"]
 [ext_resource type="Texture2D" uid="uid://bjj0wh7ufrmxq" path="res://assets/images/tileset/grass with top and bottom boarder.png" id="1_qayhv"]
-[ext_resource type="PackedScene" uid="uid://dgtflyvf546jf" path="res://scenes/player.tscn" id="3_3wcxf"]
-[ext_resource type="PackedScene" uid="uid://b7r1gvuetoy42" path="res://scenes/jaguar.tscn" id="4_j1odm"]
+[ext_resource type="PackedScene" uid="uid://dgtflyvf546jf" path="res://scenes/Player.tscn" id="3_3wcxf"]
+[ext_resource type="PackedScene" uid="uid://b7r1gvuetoy42" path="res://scenes/Jaguar.tscn" id="4_j1odm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ndhg3"]
 texture = ExtResource("1_qayhv")

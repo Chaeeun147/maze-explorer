@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://la1pmtmvymmk"]
 
-[ext_resource type="Script" uid="uid://d0cnkx4aods3l" path="res://scripts/main.gd" id="1_uu6xs"]
-[ext_resource type="PackedScene" uid="uid://cdbjqk1amj2tg" path="res://scenes/levels/level_root.tscn" id="6_3dxm6"]
+[ext_resource type="Script" uid="uid://d0cnkx4aods3l" path="res://scripts/Main.gd" id="1_uu6xs"]
+[ext_resource type="PackedScene" uid="uid://cdbjqk1amj2tg" path="res://scenes/levels/Level_Root.tscn" id="6_3dxm6"]
 
 [node name="Main" type="Node2D"]
 position = Vector2(-3, 0)
