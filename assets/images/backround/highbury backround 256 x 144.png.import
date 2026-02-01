@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cf1fa0y2wbcvt"
-path="res://.godot/imported/Highbury Backround Asset 1280 720.png-9055f4b81a3db0eac968687289319dbc.ctex"
+uid="uid://cor7pgnv4pik3"
+path="res://.godot/imported/highbury backround 256 x 144.png-fc1aba732eb5c3ad2ad680d37726529b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/backround/Highbury Backround Asset 1280 720.png"
-dest_files=["res://.godot/imported/Highbury Backround Asset 1280 720.png-9055f4b81a3db0eac968687289319dbc.ctex"]
+source_file="res://assets/images/backround/highbury backround 256 x 144.png"
+dest_files=["res://.godot/imported/highbury backround 256 x 144.png-fc1aba732eb5c3ad2ad680d37726529b.ctex"]
 
 [params]
 

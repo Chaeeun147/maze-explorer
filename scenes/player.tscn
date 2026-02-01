@@ -1,9 +1,9 @@
 [gd_scene load_steps=35 format=3 uid="uid://dgtflyvf546jf"]
 
-[ext_resource type="Texture2D" uid="uid://dkg8vy5po8rya" path="res://assets/images/player/Dying Capy 800 x 800.png" id="1_mdl7e"]
-[ext_resource type="Texture2D" uid="uid://c7vfnibqwqsme" path="res://assets/images/player/Idle Capy.png" id="2_qu4a1"]
-[ext_resource type="Texture2D" uid="uid://dpc26meojqvel" path="res://assets/images/player/Jump.png" id="3_70d11"]
-[ext_resource type="Texture2D" uid="uid://8xuogsq8jeqx" path="res://assets/images/player/Walking Capy.png" id="4_cw2d6"]
+[ext_resource type="Texture2D" uid="uid://dkg8vy5po8rya" path="res://assets/images/player/Dying Capy 800 x 800.png" id="1_dqkch"]
+[ext_resource type="Texture2D" uid="uid://c7vfnibqwqsme" path="res://assets/images/player/Idle Capy.png" id="2_qlg0r"]
+[ext_resource type="Texture2D" uid="uid://dpc26meojqvel" path="res://assets/images/player/Jump.png" id="3_tuyoq"]
+[ext_resource type="Texture2D" uid="uid://8xuogsq8jeqx" path="res://assets/images/player/Walking Capy.png" id="4_fjrip"]
 
 [sub_resource type="GDScript" id="GDScript_dqkch"]
 script/source = "extends CharacterBody2D
@@ -60,111 +60,111 @@ func die() -> void:
 size = Vector2(546.6667, 613.3334)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qlg0r"]
-atlas = ExtResource("1_mdl7e")
+atlas = ExtResource("1_dqkch")
 region = Rect2(0, 0, 800, 800)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tuyoq"]
-atlas = ExtResource("1_mdl7e")
+atlas = ExtResource("1_dqkch")
 region = Rect2(800, 0, 800, 800)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fjrip"]
-atlas = ExtResource("1_mdl7e")
+atlas = ExtResource("1_dqkch")
 region = Rect2(1600, 0, 800, 800)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_smehm"]
-atlas = ExtResource("1_mdl7e")
+atlas = ExtResource("1_dqkch")
 region = Rect2(0, 800, 800, 800)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ur7pv"]
-atlas = ExtResource("1_mdl7e")
+atlas = ExtResource("1_dqkch")
 region = Rect2(800, 800, 800, 800)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y4r1p"]
-atlas = ExtResource("1_mdl7e")
+atlas = ExtResource("1_dqkch")
 region = Rect2(1600, 800, 800, 800)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d2wvv"]
-atlas = ExtResource("1_mdl7e")
+atlas = ExtResource("1_dqkch")
 region = Rect2(0, 1600, 800, 800)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3v2ag"]
-atlas = ExtResource("1_mdl7e")
+atlas = ExtResource("1_dqkch")
 region = Rect2(800, 1600, 800, 800)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jej6c"]
-atlas = ExtResource("1_mdl7e")
+atlas = ExtResource("1_dqkch")
 region = Rect2(1600, 1600, 800, 800)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f1ej7"]
-atlas = ExtResource("1_mdl7e")
+atlas = ExtResource("1_dqkch")
 region = Rect2(0, 2400, 800, 800)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oprun"]
-atlas = ExtResource("2_qu4a1")
+atlas = ExtResource("2_qlg0r")
 region = Rect2(0, 0, 704, 704)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a8ls1"]
-atlas = ExtResource("2_qu4a1")
+atlas = ExtResource("2_qlg0r")
 region = Rect2(704, 0, 704, 704)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qfm1y"]
-atlas = ExtResource("2_qu4a1")
+atlas = ExtResource("2_qlg0r")
 region = Rect2(1408, 0, 704, 704)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fulsm"]
-atlas = ExtResource("2_qu4a1")
+atlas = ExtResource("2_qlg0r")
 region = Rect2(0, 704, 704, 704)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4r5pv"]
-atlas = ExtResource("2_qu4a1")
+atlas = ExtResource("2_qlg0r")
 region = Rect2(704, 704, 704, 704)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_60mlk"]
-atlas = ExtResource("2_qu4a1")
+atlas = ExtResource("2_qlg0r")
 region = Rect2(1408, 704, 704, 704)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i4ail"]
-atlas = ExtResource("2_qu4a1")
+atlas = ExtResource("2_qlg0r")
 region = Rect2(0, 1408, 704, 704)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a38lo"]
-atlas = ExtResource("2_qu4a1")
+atlas = ExtResource("2_qlg0r")
 region = Rect2(704, 1408, 704, 704)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4ni07"]
-atlas = ExtResource("3_70d11")
+atlas = ExtResource("3_tuyoq")
 region = Rect2(0, 0, 704, 704)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_l71n6"]
-atlas = ExtResource("4_cw2d6")
+atlas = ExtResource("4_fjrip")
 region = Rect2(0, 0, 704, 704)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ke2ow"]
-atlas = ExtResource("4_cw2d6")
+atlas = ExtResource("4_fjrip")
 region = Rect2(704, 0, 704, 704)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ujl30"]
-atlas = ExtResource("4_cw2d6")
+atlas = ExtResource("4_fjrip")
 region = Rect2(1408, 0, 704, 704)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_31cv2"]
-atlas = ExtResource("4_cw2d6")
+atlas = ExtResource("4_fjrip")
 region = Rect2(0, 704, 704, 704)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pf23h"]
-atlas = ExtResource("4_cw2d6")
+atlas = ExtResource("4_fjrip")
 region = Rect2(704, 704, 704, 704)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dt7fs"]
-atlas = ExtResource("4_cw2d6")
+atlas = ExtResource("4_fjrip")
 region = Rect2(1408, 704, 704, 704)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wqfne"]
-atlas = ExtResource("4_cw2d6")
+atlas = ExtResource("4_fjrip")
 region = Rect2(0, 1408, 704, 704)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wnwbv"]
-atlas = ExtResource("4_cw2d6")
+atlas = ExtResource("4_fjrip")
 region = Rect2(704, 1408, 704, 704)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gl8cc"]
@@ -200,9 +200,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_f1ej7")
 }],
-"loop": true,
+"loop": false,
 "name": &"dying",
-"speed": 5.0
+"speed": 7.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -285,4 +285,7 @@ position = Vector2(6.6666665, -186.66666)
 sprite_frames = SubResource("SpriteFrames_gl8cc")
 animation = &"dying"
 autoplay = "idle"
-frame_progress = 0.69576526
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(126.66666, -1593.3333)
+scale = Vector2(-220597220, 115279540000)

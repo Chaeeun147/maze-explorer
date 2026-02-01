@@ -161,11 +161,12 @@ script = ExtResource("1_le0io")
 texture_filter = 1
 scale = Vector2(0.3, 0.3)
 sprite_frames = SubResource("SpriteFrames_e6myu")
+animation = &"collected"
 autoplay = "default"
-frame_progress = 0.315934
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(3, 3)
 shape = SubResource("CircleShape2D_228yf")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="animation_looped" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_looped"]

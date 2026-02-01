@@ -2,9 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://dtjoxgxt1qteo" path="res://assets/images/backround/sky 5.0.png" id="1_atrx7"]
 [ext_resource type="Texture2D" uid="uid://bjj0wh7ufrmxq" path="res://assets/images/tileset/grass with top and bottom boarder.png" id="1_qayhv"]
-[ext_resource type="PackedScene" uid="uid://dgtflyvf546jf" path="res://scenes/Player.tscn" id="3_3wcxf"]
-[ext_resource type="PackedScene" uid="uid://b7r1gvuetoy42" path="res://scenes/Jaguar.tscn" id="4_j1odm"]
-[ext_resource type="PackedScene" uid="uid://cys63djxt4inp" path="res://scenes/Turtle.tscn" id="5_sxap8"]
+[ext_resource type="PackedScene" uid="uid://dgtflyvf546jf" path="res://scenes/player.tscn" id="3_3wcxf"]
+[ext_resource type="PackedScene" uid="uid://b7r1gvuetoy42" path="res://scenes/jaguar.tscn" id="4_j1odm"]
+[ext_resource type="PackedScene" uid="uid://cys63djxt4inp" path="res://scenes/turtle.tscn" id="5_sxap8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ndhg3"]
 texture = ExtResource("1_qayhv")
@@ -17,7 +17,7 @@ tile_size = Vector2i(1000, 1000)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_ndhg3")
 
-[node name="Level Root" type="Node2D"]
+[node name="LevelRoot" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 1280.0
@@ -32,20 +32,16 @@ tile_set = SubResource("TileSet_4d4qa")
 
 [node name="Player" parent="." instance=ExtResource("3_3wcxf")]
 position = Vector2(82, 602)
-collision_layer = 2
-collision_mask = 3
 
 [node name="Enemies" type="Node2D" parent="."]
 
 [node name="Jaguar2" parent="Enemies" instance=ExtResource("4_j1odm")]
 position = Vector2(1032, 632)
 scale = Vector2(0.25500003, 0.25500003)
-collision_mask = 3
 
 [node name="Jaguar" parent="Enemies" instance=ExtResource("4_j1odm")]
 position = Vector2(557, 630.00006)
 scale = Vector2(0.25500003, 0.25500003)
-collision_mask = 3
 
 [node name="Turtles" type="Node2D" parent="."]
 
