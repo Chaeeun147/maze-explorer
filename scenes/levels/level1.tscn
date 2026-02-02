@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=4 uid="uid://cdbjqk1amj2tg"]
+[gd_scene load_steps=9 format=4 uid="uid://cdbjqk1amj2tg"]
 
 [ext_resource type="Texture2D" uid="uid://dtjoxgxt1qteo" path="res://assets/images/backround/sky 5.0.png" id="1_atrx7"]
 [ext_resource type="Texture2D" uid="uid://bjj0wh7ufrmxq" path="res://assets/images/tileset/grass with top and bottom boarder.png" id="1_qayhv"]
 [ext_resource type="PackedScene" uid="uid://dgtflyvf546jf" path="res://scenes/player.tscn" id="3_3wcxf"]
 [ext_resource type="PackedScene" uid="uid://b7r1gvuetoy42" path="res://scenes/jaguar.tscn" id="4_j1odm"]
 [ext_resource type="PackedScene" uid="uid://cys63djxt4inp" path="res://scenes/turtle.tscn" id="5_sxap8"]
+[ext_resource type="Texture2D" uid="uid://dgwaseoqxyxsg" path="res://assets/images/backround items/highbury frame 256 x 144.png" id="6_1seuy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ndhg3"]
 texture = ExtResource("1_qayhv")
@@ -18,17 +19,25 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_ndhg3")
 
 [node name="LevelRoot" type="Node2D"]
+position = Vector2(1, 0)
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 1280.0
-offset_bottom = 720.0
+offset_left = -2053.0
+offset_top = -922.0
+offset_right = 5045.0
+offset_bottom = 1916.0
 texture = ExtResource("1_atrx7")
 stretch_mode = 1
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 scale = Vector2(0.06, 0.06)
-tile_map_data = PackedByteArray("AAAAAAsAAAAAAAAAAAABAAsAAAAAAAAAAAACAAsAAAAAAAAAAAADAAsAAAAAAAAAAAAEAAsAAAAAAAAAAAAFAAsAAAAAAAAAAAAGAAsAAAAAAAAAAAAHAAsAAAAAAAAAAAAIAAsAAAAAAAAAAAAJAAsAAAAAAAAAAAAKAAsAAAAAAAAAAAALAAsAAAAAAAAAAAAMAAsAAAAAAAAAAAANAAsAAAAAAAAAAAAOAAsAAAAAAAAAAAAPAAsAAAAAAAAAAAAQAAsAAAAAAAAAAAARAAsAAAAAAAAAAAASAAsAAAAAAAAAAAATAAsAAAAAAAAAAAAUAAsAAAAAAAAAAAAVAAsAAAAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAAAAAsAAAAAAAAAAAABAAsAAAAAAAAAAAACAAsAAAAAAAAAAAADAAsAAAAAAAAAAAAEAAsAAAAAAAAAAAAFAAsAAAAAAAAAAAAGAAsAAAAAAAAAAAAHAAsAAAAAAAAAAAAIAAsAAAAAAAAAAAAJAAsAAAAAAAAAAAAKAAsAAAAAAAAAAAALAAsAAAAAAAAAAAAMAAsAAAAAAAAAAAANAAsAAAAAAAAAAAAOAAsAAAAAAAAAAAAPAAsAAAAAAAAAAAAQAAsAAAAAAAAAAAARAAsAAAAAAAAAAAASAAsAAAAAAAAAAAATAAsAAAAAAAAAAAAUAAsAAAAAAAAAAAAVAAsAAAAAAAAAAAD//wsAAAAAAAAAAAD+/wsAAAAAAAAAAAD9/wsAAAAAAAAAAAAFAAkAAAAAAAAAAAAGAAkAAAAAAAAAAAAJAAgAAAAAAAAAAAAKAAgAAAAAAAAAAAALAAgAAAAAAAAAAAAOAAYAAAAAAAAAAAAPAAYAAAAAAAAAAAAQAAYAAAAAAAAAAAD8/wsAAAAAAAAAAAD7/wsAAAAAAAAAAAD6/wsAAAAAAAAAAAAXAAwAAAAAAAAAAAAYAAwAAAAAAAAAAAAZAAwAAAAAAAAAAAAaAAwAAAAAAAAAAAAbAAwAAAAAAAAAAAAcAAwAAAAAAAAAAAAdAAwAAAAAAAAAAAAeAAwAAAAAAAAAAAAfAAwAAAAAAAAAAAAiAAsAAAAAAAAAAAAjAAoAAAAAAAAAAAAkAAkAAAAAAAAAAAAlAAgAAAAAAAAAAAAmAAgAAAAAAAAAAAAnAAgAAAAAAAAAAAAoAAgAAAAAAAAAAAApAAgAAAAAAAAAAAAqAAgAAAAAAAAAAAArAAgAAAAAAAAAAAAsAAgAAAAAAAAAAAAtAAgAAAAAAAAAAAD5/wsAAAAAAAAAAAD4/wsAAAAAAAAAAAD3/wsAAAAAAAAAAAD2/wsAAAAAAAAAAAD1/wsAAAAAAAAAAAD0/wsAAAAAAAAAAADz/wsAAAAAAAAAAADy/wsAAAAAAAAAAADx/wsAAAAAAAAAAADw/wsAAAAAAAAAAADv/wsAAAAAAAAAAADv/woAAAAAAAAAAADv/wkAAAAAAAAAAADv/wgAAAAAAAAAAAAeABAAAAAAAAAAAAAeABEAAAAAAAAAAAAfABEAAAAAAAAAAAAgABEAAAAAAAAAAAAhABEAAAAAAAAAAAAiABEAAAAAAAAAAAAjABEAAAAAAAAAAAAkABEAAAAAAAAAAAAlABEAAAAAAAAAAAAlABAAAAAAAAAAAAAuAAgAAAAAAAAAAAAvAAgAAAAAAAAAAAAwAAkAAAAAAAAAAAAwAAoAAAAAAAAAAAAxAAoAAAAAAAAAAAAxAAsAAAAAAAAAAAAyAAsAAAAAAAAAAAAyAAwAAAAAAAAAAAAzAAwAAAAAAAAAAAAzAA0AAAAAAAAAAAA0AA0AAAAAAAAAAAA1AA0AAAAAAAAAAAA2AA0AAAAAAAAAAAA3AA0AAAAAAAAAAAA4AA0AAAAAAAAAAAA5AA0AAAAAAAAAAAA6AA0AAAAAAAAAAAA7AA0AAAAAAAAAAAA8AA0AAAAAAAAAAAA9AA0AAAAAAAAAAAA+AA0AAAAAAAAAAAA/AA0AAAAAAAAAAABAAA0AAAAAAAAAAABCAA0AAAAAAAAAAABBAA0AAAAAAAAAAABDAA0AAAAAAAAAAABDAAwAAAAAAAAAAABDAAsAAAAAAAAAAABDAAoAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_4d4qa")
+
+[node name="HighburyFrame256X144" type="Sprite2D" parent="."]
+position = Vector2(2162, 200)
+scale = Vector2(2.114583, 2.114583)
+texture = ExtResource("6_1seuy")
 
 [node name="Player" parent="." instance=ExtResource("3_3wcxf")]
 position = Vector2(82, 602)
@@ -36,17 +45,33 @@ position = Vector2(82, 602)
 [node name="Enemies" type="Node2D" parent="."]
 
 [node name="Jaguar2" parent="Enemies" instance=ExtResource("4_j1odm")]
-position = Vector2(1032, 632)
+position = Vector2(2333, 452.00006)
+scale = Vector2(0.25500003, 0.25500003)
+
+[node name="Jaguar3" parent="Enemies" instance=ExtResource("4_j1odm")]
+position = Vector2(1934.0004, 989)
 scale = Vector2(0.25500003, 0.25500003)
 
 [node name="Jaguar" parent="Enemies" instance=ExtResource("4_j1odm")]
-position = Vector2(557, 630.00006)
+position = Vector2(671, 629.00006)
 scale = Vector2(0.25500003, 0.25500003)
 
 [node name="Turtles" type="Node2D" parent="."]
 
 [node name="Turtle" parent="Turtles" instance=ExtResource("5_sxap8")]
-position = Vector2(353, 600)
+position = Vector2(631, 399)
 
 [node name="Turtle2" parent="Turtles" instance=ExtResource("5_sxap8")]
 position = Vector2(741, 608)
+
+[node name="Turtle3" parent="Turtles" instance=ExtResource("5_sxap8")]
+position = Vector2(1159, 193)
+
+[node name="Turtle4" parent="Turtles" instance=ExtResource("5_sxap8")]
+position = Vector2(2353, 269)
+
+[node name="Turtle5" parent="Turtles" instance=ExtResource("5_sxap8")]
+position = Vector2(-466, 592)
+
+[node name="Turtle6" parent="Turtles" instance=ExtResource("5_sxap8")]
+position = Vector2(3364, 736)
