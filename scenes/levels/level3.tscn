@@ -1,15 +1,15 @@
-[gd_scene load_steps=25 format=4 uid="uid://cdbjqk1amj2tg"]
+[gd_scene load_steps=25 format=4 uid="uid://dyra65guuinqm"]
 
-[ext_resource type="Texture2D" uid="uid://dtjoxgxt1qteo" path="res://assets/images/backround/sky 5.0.png" id="1_atrx7"]
-[ext_resource type="Texture2D" uid="uid://bjj0wh7ufrmxq" path="res://assets/images/tileset/grass with top and bottom boarder.png" id="1_qayhv"]
-[ext_resource type="PackedScene" uid="uid://dgtflyvf546jf" path="res://scenes/player.tscn" id="3_3wcxf"]
-[ext_resource type="PackedScene" uid="uid://b7r1gvuetoy42" path="res://scenes/jaguar.tscn" id="4_j1odm"]
-[ext_resource type="PackedScene" uid="uid://cys63djxt4inp" path="res://scenes/Turtle.tscn" id="5_sxap8"]
-[ext_resource type="Texture2D" uid="uid://dgwaseoqxyxsg" path="res://assets/images/backround items/highbury frame 256 x 144.png" id="6_1seuy"]
-[ext_resource type="Texture2D" uid="uid://d12jrakensfnv" path="res://assets/images/backround items/level 2 entrance pink tree 128 x 128 x 16.png" id="7_2r1tl"]
+[ext_resource type="Texture2D" uid="uid://dtjoxgxt1qteo" path="res://assets/images/backround/sky 5.0.png" id="1_f7rt6"]
+[ext_resource type="Texture2D" uid="uid://bjj0wh7ufrmxq" path="res://assets/images/tileset/grass with top and bottom boarder.png" id="2_8w0pe"]
+[ext_resource type="Texture2D" uid="uid://dgwaseoqxyxsg" path="res://assets/images/backround items/highbury frame 256 x 144.png" id="3_7eb4w"]
+[ext_resource type="Texture2D" uid="uid://d12jrakensfnv" path="res://assets/images/backround items/level 2 entrance pink tree 128 x 128 x 16.png" id="4_hadiw"]
+[ext_resource type="PackedScene" uid="uid://dgtflyvf546jf" path="res://scenes/player.tscn" id="5_72x3h"]
+[ext_resource type="PackedScene" uid="uid://b7r1gvuetoy42" path="res://scenes/jaguar.tscn" id="6_wb0vq"]
+[ext_resource type="PackedScene" uid="uid://cys63djxt4inp" path="res://scenes/Turtle.tscn" id="7_ah4rv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ndhg3"]
-texture = ExtResource("1_qayhv")
+texture = ExtResource("2_8w0pe")
 texture_region_size = Vector2i(1000, 1000)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-500, -500, 500, -500, 500, 500, -500, 500)
@@ -20,55 +20,55 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_ndhg3")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8a7m2"]
-atlas = ExtResource("7_2r1tl")
+atlas = ExtResource("4_hadiw")
 region = Rect2(0, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_plydf"]
-atlas = ExtResource("7_2r1tl")
+atlas = ExtResource("4_hadiw")
 region = Rect2(128, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5ntmo"]
-atlas = ExtResource("7_2r1tl")
+atlas = ExtResource("4_hadiw")
 region = Rect2(256, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nkeig"]
-atlas = ExtResource("7_2r1tl")
+atlas = ExtResource("4_hadiw")
 region = Rect2(384, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nfihu"]
-atlas = ExtResource("7_2r1tl")
+atlas = ExtResource("4_hadiw")
 region = Rect2(0, 128, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lgguw"]
-atlas = ExtResource("7_2r1tl")
+atlas = ExtResource("4_hadiw")
 region = Rect2(128, 128, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jprdt"]
-atlas = ExtResource("7_2r1tl")
+atlas = ExtResource("4_hadiw")
 region = Rect2(256, 128, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ps2vj"]
-atlas = ExtResource("7_2r1tl")
+atlas = ExtResource("4_hadiw")
 region = Rect2(384, 128, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sbmf2"]
-atlas = ExtResource("7_2r1tl")
+atlas = ExtResource("4_hadiw")
 region = Rect2(0, 256, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1xax6"]
-atlas = ExtResource("7_2r1tl")
+atlas = ExtResource("4_hadiw")
 region = Rect2(128, 256, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g7tkf"]
-atlas = ExtResource("7_2r1tl")
+atlas = ExtResource("4_hadiw")
 region = Rect2(256, 256, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4fww7"]
-atlas = ExtResource("7_2r1tl")
+atlas = ExtResource("4_hadiw")
 region = Rect2(384, 256, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gvm5i"]
-atlas = ExtResource("7_2r1tl")
+atlas = ExtResource("4_hadiw")
 region = Rect2(0, 384, 128, 128)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_jrfo0"]
@@ -130,7 +130,7 @@ offset_left = -1913.0
 offset_top = -797.0
 offset_right = 5185.0
 offset_bottom = 2041.0
-texture = ExtResource("1_atrx7")
+texture = ExtResource("1_f7rt6")
 stretch_mode = 1
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
@@ -142,7 +142,7 @@ tile_set = SubResource("TileSet_4d4qa")
 texture_filter = 1
 position = Vector2(2162, 200)
 scale = Vector2(2.114583, 2.114583)
-texture = ExtResource("6_1seuy")
+texture = ExtResource("3_7eb4w")
 
 [node name="Pink Tree" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
@@ -152,41 +152,41 @@ sprite_frames = SubResource("SpriteFrames_jrfo0")
 autoplay = "default"
 frame_progress = 0.12416292
 
-[node name="Player" parent="." instance=ExtResource("3_3wcxf")]
+[node name="Player" parent="." instance=ExtResource("5_72x3h")]
 position = Vector2(82, 602)
 
 [node name="Enemies" type="Node2D" parent="."]
 
-[node name="Jaguar2" parent="Enemies" instance=ExtResource("4_j1odm")]
+[node name="Jaguar2" parent="Enemies" instance=ExtResource("6_wb0vq")]
 position = Vector2(2333, 452.00006)
 scale = Vector2(0.25500003, 0.25500003)
 
-[node name="Jaguar3" parent="Enemies" instance=ExtResource("4_j1odm")]
+[node name="Jaguar3" parent="Enemies" instance=ExtResource("6_wb0vq")]
 position = Vector2(1934.0004, 989)
 scale = Vector2(0.25500003, 0.25500003)
 
-[node name="Jaguar" parent="Enemies" instance=ExtResource("4_j1odm")]
+[node name="Jaguar" parent="Enemies" instance=ExtResource("6_wb0vq")]
 position = Vector2(671, 629.00006)
 scale = Vector2(0.25500003, 0.25500003)
 
 [node name="Turtles" type="Node2D" parent="."]
 
-[node name="Turtle" parent="Turtles" instance=ExtResource("5_sxap8")]
+[node name="Turtle" parent="Turtles" instance=ExtResource("7_ah4rv")]
 position = Vector2(631, 399)
 
-[node name="Turtle2" parent="Turtles" instance=ExtResource("5_sxap8")]
+[node name="Turtle2" parent="Turtles" instance=ExtResource("7_ah4rv")]
 position = Vector2(741, 608)
 
-[node name="Turtle3" parent="Turtles" instance=ExtResource("5_sxap8")]
+[node name="Turtle3" parent="Turtles" instance=ExtResource("7_ah4rv")]
 position = Vector2(1159, 193)
 
-[node name="Turtle4" parent="Turtles" instance=ExtResource("5_sxap8")]
+[node name="Turtle4" parent="Turtles" instance=ExtResource("7_ah4rv")]
 position = Vector2(2353, 269)
 
-[node name="Turtle5" parent="Turtles" instance=ExtResource("5_sxap8")]
+[node name="Turtle5" parent="Turtles" instance=ExtResource("7_ah4rv")]
 position = Vector2(-466, 592)
 
-[node name="Turtle6" parent="Turtles" instance=ExtResource("5_sxap8")]
+[node name="Turtle6" parent="Turtles" instance=ExtResource("7_ah4rv")]
 position = Vector2(3364, 736)
 
 [node name="Exit" type="Area2D" parent="."]

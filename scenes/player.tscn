@@ -57,7 +57,7 @@ func die() -> void:
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b26j0"]
-size = Vector2(546.6667, 613.3334)
+size = Vector2(466.66666, 480)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qlg0r"]
 atlas = ExtResource("1_dqkch")
@@ -277,11 +277,11 @@ scale = Vector2(0.15, 0.15)
 script = SubResource("GDScript_dqkch")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(20, -213.33334)
+position = Vector2(-20, -146.66666)
 shape = SubResource("RectangleShape2D_b26j0")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(6.6666665, -186.66666)
+position = Vector2(-20, -193.33333)
 sprite_frames = SubResource("SpriteFrames_gl8cc")
 animation = &"dying"
 autoplay = "idle"
