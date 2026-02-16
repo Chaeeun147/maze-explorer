@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://boarblx3q407u"]
+
+[ext_resource type="Texture2D" uid="uid://djho1f3qcw73r" path="res://assets/images/level 3/spoon.png" id="1_l12hh"]
+
+[node name="Fork" type="Sprite2D"]
+texture_filter = 1
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_l12hh")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2(0, -40)
+polygon = PackedVector2Array(0, 0, -9.999999, 0, -689.99994, 209.99998, -719.99994, 249.99998, -729.99994, 299.99997, -729.99994, 329.99997, -699.99994, 349.99997, -679.99994, 369.99997, -569.99994, 369.99997, 189.99998, 109.999985, 189.99998, 129.99998, 359.99997, 129.99998, 469.99997, 79.99999, 519.99994, 49.999996, 569.99994, -39.999996, 569.99994, -70, 569.99994, -119.999985, 569.99994, -139.99998, 499.99994, -199.99997, 479.99994, -209.99997, 459.99997, -219.99997, 419.99997, -229.99997, 289.99997, -219.99997, 179.99998, -139.99998, 149.99998, -70, 149.99998, -29.999996, 89.99999, -29.999996, 89.99999, -10, 9.999999, 0)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://eu1ikckas0au"]
 
-[ext_resource type="Texture2D" uid="uid://bjj0wh7ufrmxq" path="res://assets/images/tileset/grass with top and bottom boarder.png" id="1_ms375"]
+[ext_resource type="Texture2D" uid="uid://bjbtaeiwj6jjt" path="res://assets/images/tileset/pink grass.png" id="1_kgvn5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1tdcd"]
 size = Vector2(1000, 1000)
@@ -38,9 +38,11 @@ scale = Vector2(0.1, 0.1)
 
 [node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D"]
 texture_filter = 1
-texture = ExtResource("1_ms375")
+position = Vector2(4.5776367e-05, 4.5776367e-05)
+scale = Vector2(31.249998, 31.249998)
+texture = ExtResource("1_kgvn5")
 region_enabled = true
-region_rect = Rect2(0, 0, 1000, 1000)
+region_rect = Rect2(0, 0, 32, 32)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D"]
 position = Vector2(-1.9999994, 6.6757195e-05)

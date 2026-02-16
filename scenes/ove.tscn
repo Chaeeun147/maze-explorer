@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cu4sceoimyfa7"]
+
+[ext_resource type="Texture2D" uid="uid://dpbm18vfypy0l" path="res://assets/images/level 3/oven.png" id="1_oooh0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u37le"]
+size = Vector2(924, 988)
+
+[node name="Oven" type="Sprite2D"]
+texture_filter = 1
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_oooh0")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(2, 10)
+shape = SubResource("RectangleShape2D_u37le")

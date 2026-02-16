@@ -269,9 +269,13 @@ texture = ExtResource("8_b0vvs")
 scale = Vector2(0.06, 0.06)
 
 [node name="MovingPlatform" parent="Moving Platform" instance=ExtResource("15_hkuam")]
-position = Vector2(-100, 6933.334)
-scale = Vector2(10, 10)
+position = Vector2(816.66626, 6400)
+scale = Vector2(9.8, 9.8)
 
 [node name="MovingPlatform2" parent="Moving Platform" instance=ExtResource("15_hkuam")]
-position = Vector2(899.9995, 6933.334)
-scale = Vector2(10, 10)
+position = Vector2(-149.99966, 6400)
+scale = Vector2(9.8, 9.8)
+
+[node name="MovingPlatform3" parent="Moving Platform" instance=ExtResource("15_hkuam")]
+position = Vector2(1783.331, 6400)
+scale = Vector2(9.8, 9.8)

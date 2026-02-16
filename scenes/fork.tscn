@@ -1,18 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://cpc4ydwkaaeet"]
+[gd_scene load_steps=2 format=3 uid="uid://cpc4ydwkaaeet"]
 
 [ext_resource type="Texture2D" uid="uid://mhsrc1xdglbe" path="res://assets/images/level 3/fork.png" id="1_5ebg1"]
-[ext_resource type="Script" uid="uid://bjiyxmwejb5ok" path="res://scenes/fork.gd" id="1_6dqu0"]
 
-[node name="Fork" type="Area2D"]
-scale = Vector2(2, 2)
-script = ExtResource("1_6dqu0")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Fork" type="Sprite2D"]
 texture_filter = 1
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("1_5ebg1")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2(1, -5)
-scale = Vector2(1.0376838, 1.046875)
-polygon = PackedVector2Array(0, 0, -66.49424, 21.014925, -72, 28, -66.97608, 36.298508, -56.375553, 36.298508, 2.4092116, 15.761194, 14.45527, 12.417912, 18.310009, 10.507463, 18.310009, 13.850746, 26.983171, 13.373135, 32.765278, 13.373135, 32.765278, 11.462687, 41.920284, 11.462687, 60.712135, -2.8656716, 60.712135, -11.462687, 57.339237, -12.895523, 48.184235, -21.97015, 48.184235, -24.835823, 43.36581, -24.835823, 35.656334, -17.19403, 25.055801, -12.41791, 19, -9, 13.491585, -5.7313437, 13.491585, -1.9104476)
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2(0, -40)
+polygon = PackedVector2Array(0, 0, -9.999999, 0, -689.99994, 209.99998, -719.99994, 249.99998, -729.99994, 299.99997, -729.99994, 329.99997, -699.99994, 349.99997, -679.99994, 369.99997, -569.99994, 369.99997, 189.99998, 109.999985, 189.99998, 129.99998, 359.99997, 129.99998, 449.99997, 99.999985, 529.99994, 59.999992, 639.99994, -49.999996, 639.99994, -139.99998, 599.99994, -129.99998, 589.99994, -159.99998, 509.99994, -239.99997, 509.99994, -269.99997, 459.99997, -269.99997, 459.99997, -249.99997, 309.99997, -159.99998, 199.99998, -109.999985, 159.99998, -70, 149.99998, -29.999996, 89.99999, -29.999996, 89.99999, -10, 9.999999, 0)

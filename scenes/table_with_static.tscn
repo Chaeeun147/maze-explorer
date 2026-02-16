@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://b7ml73ha2sd72"]
+
+[ext_resource type="Texture2D" uid="uid://cl3yw5p0akgb8" path="res://assets/images/level 3/table.png" id="1_rjf12"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gwylg"]
+size = Vector2(1045.0002, 155)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_04l30"]
+size = Vector2(240.00005, 220.00006)
+
+[node name="Table with Static" type="Sprite2D"]
+texture_filter = 1
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_rjf12")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(7.499989, 32.499996)
+scale = Vector2(0.9999995, 0.9999995)
+shape = SubResource("RectangleShape2D_gwylg")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-9.999993, -154.9999)
+scale = Vector2(0.9999995, 0.9999995)
+shape = SubResource("RectangleShape2D_04l30")
