@@ -1,11 +1,10 @@
-[gd_scene load_steps=37 format=4 uid="uid://dyra65guuinqm"]
+[gd_scene load_steps=38 format=4 uid="uid://dyra65guuinqm"]
 
 [ext_resource type="Texture2D" uid="uid://o1sqm28i1ji7" path="res://assets/images/level 3/kitchen wall tiles.png" id="1_f7rt6"]
 [ext_resource type="Texture2D" uid="uid://chfpdtg8f7sg3" path="res://assets/images/level 3/wall.png" id="2_7eb4w"]
 [ext_resource type="Texture2D" uid="uid://dhsetn6inou5u" path="res://assets/images/level 3/tile tileset.png" id="2_f7rt6"]
 [ext_resource type="Texture2D" uid="uid://dgwaseoqxyxsg" path="res://assets/images/backround items/highbury frame 256 x 144.png" id="3_7eb4w"]
 [ext_resource type="Texture2D" uid="uid://d12jrakensfnv" path="res://assets/images/backround items/level 2 entrance pink tree 128 x 128 x 16.png" id="4_hadiw"]
-[ext_resource type="PackedScene" uid="uid://cpc4ydwkaaeet" path="res://scenes/fork.tscn" id="4_wo5bm"]
 [ext_resource type="PackedScene" uid="uid://dgtflyvf546jf" path="res://scenes/player.tscn" id="5_72x3h"]
 [ext_resource type="Texture2D" uid="uid://8p8w8cfpu26f" path="res://assets/images/level 3/orange seedling.png" id="5_ah4rv"]
 [ext_resource type="PackedScene" uid="uid://b7r1gvuetoy42" path="res://scenes/jaguar.tscn" id="6_wb0vq"]
@@ -19,6 +18,8 @@
 [ext_resource type="Texture2D" uid="uid://ciahx1yvb5jen" path="res://assets/images/level 3/brown seedling.png" id="16_wt4k6"]
 [ext_resource type="Texture2D" uid="uid://bfq4qedjjgwuy" path="res://assets/images/level 3/yellow seedling.png" id="17_ahaer"]
 [ext_resource type="Texture2D" uid="uid://dpbm18vfypy0l" path="res://assets/images/level 3/oven.png" id="18_wt4k6"]
+[ext_resource type="Texture2D" uid="uid://cl3yw5p0akgb8" path="res://assets/images/level 3/table.png" id="19_wo5bm"]
+[ext_resource type="Texture2D" uid="uid://drhpofi3hkkpy" path="res://assets/images/level 3/da soon hee.png" id="20_edoqj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8w0pe"]
 texture = ExtResource("2_f7rt6")
@@ -138,9 +139,9 @@ position = Vector2(1, 0)
 
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1
-offset_left = -4549.0
+offset_left = -4548.0
 offset_top = 657.0
-offset_right = 5185.0
+offset_right = 5186.0
 offset_bottom = 1041.0
 texture = ExtResource("1_f7rt6")
 stretch_mode = 1
@@ -162,10 +163,6 @@ tile_map_data = PackedByteArray("AAD0/wUAAQAAAAAAAAD1/wUAAQAAAAAAAAD2/wUAAQAAAAA
 tile_set = SubResource("TileSet_7eb4w")
 
 [node name="Fork" type="Node" parent="."]
-
-[node name="Fork" parent="Fork" instance=ExtResource("4_wo5bm")]
-physics_interpolation_mode = 1
-position = Vector2(-145, 762)
 
 [node name="Seedlings" type="Node2D" parent="."]
 position = Vector2(-1253, 860)
@@ -208,7 +205,7 @@ texture = ExtResource("8_8w0pe")
 
 [node name="HighburyFrame256X144" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(872, -432)
+position = Vector2(-1106, 490)
 scale = Vector2(2.114583, 2.114583)
 texture = ExtResource("3_7eb4w")
 
@@ -289,3 +286,13 @@ texture_filter = 1
 position = Vector2(-641.00006, 819.00006)
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("17_ahaer")
+
+[node name="Table" type="Sprite2D" parent="."]
+position = Vector2(3289.0002, 802.00006)
+scale = Vector2(0.33153415, 0.33153418)
+texture = ExtResource("19_wo5bm")
+
+[node name="DaSoonHee" type="Sprite2D" parent="."]
+position = Vector2(439.25, 813.25006)
+scale = Vector2(0.34161928, 0.34161928)
+texture = ExtResource("20_edoqj")

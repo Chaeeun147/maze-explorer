@@ -18,7 +18,7 @@ shadow_color = Color(0, 0, 0, 0.5921569)
 shadow_size = 3
 
 [node name="Main" type="Node2D"]
-position = Vector2(0, -3)
+position = Vector2(-7, -4)
 script = ExtResource("1_0wfyh")
 
 [node name="LevelRoot" parent="." instance=ExtResource("2_sugp2")]
