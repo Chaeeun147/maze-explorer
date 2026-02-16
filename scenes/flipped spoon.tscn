@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://u0npjpr5kwib"]
+
+[ext_resource type="Texture2D" uid="uid://c8x2l24423r81" path="res://assets/images/level 3/fliped spoon.png" id="1_hbioi"]
+
+[node name="Fork" type="Sprite2D"]
+texture_filter = 1
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_hbioi")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2(-9.999999, -60)
+polygon = PackedVector2Array(-9.536743e-07, 0, 659.99994, 209.99997, 689.99994, 259.99997, 689.99994, 319.99997, 649.99994, 369.99997, 539.99994, 369.99997, -219.99998, 109.999985, -239.99997, 129.99998, -389.99997, 129.99998, -569.99994, 39.999992, -589.99994, -30, -619.99994, -69.99999, -599.99994, -150, -489.99994, -239.99997, -339.99997, -219.99997, -229.99997, -150, -179.99998, -69.99999, -189.99998, -30)

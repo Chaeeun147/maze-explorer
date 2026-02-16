@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdoijbx6hervb"]
+
+[ext_resource type="Texture2D" uid="uid://damol4btsd5s5" path="res://assets/images/level 3/fliped fork.png" id="1_rwtxx"]
+
+[node name="Fork" type="Sprite2D"]
+texture_filter = 1
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_rwtxx")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2(0, -50)
+polygon = PackedVector2Array(0, 0, 629.99994, 189.99998, 669.99994, 239.99998, 689.99994, 299.99997, 659.99994, 339.99997, 619.99994, 369.99997, 529.99994, 369.99997, -119.999985, 119.999985, -189.99998, 119.999985, -389.99997, 119.999985, -489.99994, 89.99999, -539.99994, 69.99999, -709.99994, -79.999985, -679.99994, -149.99998, -639.99994, -149.99998, -559.99994, -229.99997, -539.99994, -289.99997, -489.99994, -279.99997, -489.99994, -259.99997, -359.99997, -169.99998, -249.99997, -119.999985, -179.99998, -69.999985, -179.99998, -29.999996, -59.999992, -19.999996)
