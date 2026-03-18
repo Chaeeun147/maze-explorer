@@ -1,10 +1,11 @@
-[gd_scene load_steps=41 format=4 uid="uid://dwhshnunfclxb"]
+[gd_scene load_steps=42 format=4 uid="uid://dwhshnunfclxb"]
 
 [ext_resource type="Texture2D" uid="uid://k10ct35w528v" path="res://assets/images/level 4/2 by 4.png" id="1_npa1m"]
 [ext_resource type="Texture2D" uid="uid://tvjqt10p6nmf" path="res://assets/images/tileset/wooden tile.png" id="3_1wpw8"]
 [ext_resource type="Texture2D" uid="uid://cry01xqdegpre" path="res://assets/images/level 4/string.png" id="5_jxa0w"]
 [ext_resource type="Texture2D" uid="uid://ben1qimh5hveq" path="res://assets/images/level 3/door.png" id="5_ku6mp"]
 [ext_resource type="Texture2D" uid="uid://co016tg60x2r7" path="res://assets/images/level 4/blue ceiling lights.png" id="5_npa1m"]
+[ext_resource type="Texture2D" uid="uid://88wr3plnbfg5" path="res://assets/images/level 4/yellow ceiling lights.png" id="6_5exf6"]
 [ext_resource type="Texture2D" uid="uid://kwmiom4mg4lc" path="res://assets/images/level 4/tv.png" id="11_cdy06"]
 [ext_resource type="PackedScene" uid="uid://13s8bl4saxal" path="res://scenes/couch.tscn" id="11_ll01n"]
 [ext_resource type="Texture2D" uid="uid://cghsdlu77qlpq" path="res://assets/images/level 3/green seedling.png" id="11_sbh2c"]
@@ -57,10 +58,10 @@ position = Vector2(3, 0)
 
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1
-offset_left = -5450.0
-offset_top = -3.0
-offset_right = 11073.0
-offset_bottom = 1185.0
+offset_left = -5448.0
+offset_top = -616.0
+offset_right = 11075.0
+offset_bottom = 1164.0
 texture = ExtResource("1_npa1m")
 stretch_mode = 1
 
@@ -103,6 +104,11 @@ texture = ExtResource("5_jxa0w")
 texture_filter = 1
 position = Vector2(-169.1585, 68.52296)
 texture = ExtResource("5_jxa0w")
+
+[node name="YellowCeilingLights" type="Sprite2D" parent="."]
+position = Vector2(6314, 387)
+scale = Vector2(0.289, 0.289)
+texture = ExtResource("6_5exf6")
 
 [node name="BlueCeilingLights" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -228,6 +234,11 @@ scale = Vector2(0.3518182, 0.3518182)
 position = Vector2(-1447.0002, 884.00024)
 scale = Vector2(0.19840904, 0.19840904)
 
+[node name="Game Controller2" parent="." instance=ExtResource("13_2c5pw")]
+position = Vector2(-1442.9999, 890.00006)
+rotation = -0.17453292
+scale = Vector2(0.12, 0.12)
+
 [node name="Game Controller" parent="." instance=ExtResource("13_2c5pw")]
 position = Vector2(-2009, 795.99994)
 scale = Vector2(0.12247481, 0.12247481)
@@ -247,7 +258,7 @@ scale = Vector2(0.4, 0.4)
 texture = ExtResource("5_ku6mp")
 
 [node name="Player" parent="." instance=ExtResource("26_8hoo4")]
-position = Vector2(-3328.0002, 861)
+position = Vector2(5791, 678)
 
 [node name="OrangeCat" type="Sprite2D" parent="."]
 texture_filter = 1
