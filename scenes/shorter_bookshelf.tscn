@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvsenqbisax4i"]
+
+[ext_resource type="Texture2D" uid="uid://ccm6djefc86y1" path="res://assets/images/level 4/shorter bookshelf.png" id="1_vwop6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7337h"]
+size = Vector2(264, 1)
+
+[node name="Shorter Bookshelf" type="Sprite2D"]
+texture_filter = 1
+texture = ExtResource("1_vwop6")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+texture_filter = 1
+position = Vector2(2, -27.5)
+shape = SubResource("RectangleShape2D_7337h")

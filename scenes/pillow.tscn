@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://bfffv6dsqb2sg"]
+
+[ext_resource type="Texture2D" uid="uid://cprf5pknilhrv" path="res://assets/images/level 4/pillow.png" id="1_hg3ry"]
+
+[node name="Pillow" type="Sprite2D"]
+texture_filter = 1
+rotation = -0.06981317
+texture = ExtResource("1_hg3ry")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(-443, -19, -340, -56, -247, -86, -138, -108, -62, -117, 21, -125, 109, -122, 191, -94, 270, -70, 372, -15, 419, 8, 461, 25, 472, 33, 479, 44, 482, 52, 481, 61, 441, 108, 353, 152, 218, 197, 87, 244, 20, 263, -112, 263, -246, 196, -309, 151, -355, 130, -398, 83, -437, 44)
