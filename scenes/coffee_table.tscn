@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dr4ibnpjh65fa"]
+
+[ext_resource type="Texture2D" uid="uid://ipa88ot6yhpx" path="res://assets/images/level 4/coffee table.png" id="1_jeqcp"]
+
+[node name="Coffee Table" type="Sprite2D"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_jeqcp")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+texture_filter = 1
+polygon = PackedVector2Array(-312, -100, -328, -84, -326, 252, -328, 266, 224, 262, 218, 204, 264, 170, 264, 202, 336, 196, 328, -100)

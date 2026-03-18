@@ -120,10 +120,10 @@ position = Vector2(1, 0)
 
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1
-offset_left = -1967.0
-offset_top = -2409.0
-offset_right = 9709.0
-offset_bottom = 2492.0
+offset_left = -1972.0
+offset_top = -2222.0
+offset_right = 9704.0
+offset_bottom = 2679.0
 texture = ExtResource("1_dj4wq")
 stretch_mode = 1
 

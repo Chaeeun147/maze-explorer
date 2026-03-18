@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://13s8bl4saxal"]
+
+[ext_resource type="Texture2D" uid="uid://c2m48v5ndvmg1" path="res://assets/images/level 4/couch.png" id="1_r84cs"]
+
+[node name="Couch" type="Sprite2D"]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_r84cs")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+texture_filter = 1
+polygon = PackedVector2Array(-633.3333, -193.33333, -740, -23.333332, -746.6666, 106.666664, -700, 146.66666, -630, 156.66666, -636.6666, 253.33333, -620, 303.3333, 593.3333, 306.66666, 613.3333, 256.66666, 613.3333, 156.66666, 676.6666, 150, 723.3333, 106.666664, 726.6666, -16.666666, 616.6666, -196.66666, 526.6666, -193.33333, 486.66666, -163.33333, 480, 73.33333, -510, 73.33333, -513.3333, -153.33333, -570, -200)

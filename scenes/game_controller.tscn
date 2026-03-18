@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdm2t2f0xhnc4"]
+
+[ext_resource type="Texture2D" uid="uid://duo5mb0enxx2o" path="res://assets/images/level 4/game controler.png" id="1_vq0e2"]
+
+[node name="Game Controller" type="Sprite2D"]
+texture_filter = 1
+rotation = 0.17453292
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_vq0e2")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(-309.99997, -149.99998, -239.99997, -219.99998, -129.99998, -219.99998, -99.99999, -179.99998, 59.999992, -179.99998, 89.99999, -219.99998, 199.99998, -219.99998, 269.99997, -149.99998, 259.99997, 79.99999, 219.99998, 129.99998, 149.99998, 129.99998, 69.99999, 49.999996, -129.99998, 39.999996, -199.99998, 129.99998, -259.99997, 129.99998, -309.99997, 89.99999)
