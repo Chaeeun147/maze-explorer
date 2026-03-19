@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3 uid="uid://c15t1omwfrbse"]
+
+[ext_resource type="Texture2D" uid="uid://b3126lya7qco3" path="res://assets/images/background menu/game menu.png" id="1_06t4h"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rhts7"]
+texture = ExtResource("1_06t4h")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhts7"]
+bg_color = Color(0.8378784, 0.65704745, 0.6493673, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="MainMenu" type="Node2D"]
+position = Vector2(642, 372)
+
+[node name="Panel" type="Panel" parent="."]
+texture_filter = 1
+offset_left = -641.0
+offset_top = -372.0
+offset_right = 638.0
+offset_bottom = 348.0
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_rhts7")
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -193.0
+offset_top = 189.0
+offset_right = 193.0
+offset_bottom = 294.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.2951374, 0.23526816, 0.25609225, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
+text = "Start Game"
