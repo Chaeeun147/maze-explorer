@@ -10,6 +10,7 @@ border_width_top = 2
 border_width_right = 2
 border_width_bottom = 2
 border_color = Color(0.68235296, 0.45490196, 0.4509804, 1)
+border_blend = true
 corner_radius_top_left = 5
 corner_radius_top_right = 5
 corner_radius_bottom_right = 5
@@ -19,24 +20,37 @@ shadow_size = 3
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rvslj"]
 bg_color = Color(0.8378784, 0.65704745, 0.6493673, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.68235296, 0.45490196, 0.4509804, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_size = 3
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0bbpv"]
 bg_color = Color(0.68394554, 0.45584583, 0.44904506, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
+border_color = Color(0.68235296, 0.45490196, 0.4509804, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_size = 3
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rarhs"]
 bg_color = Color(0.80602276, 0.6044769, 0.59643894, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
+border_color = Color(0.68235296, 0.45490196, 0.4509804, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_size = 3
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vcsgt"]
 
@@ -74,6 +88,7 @@ offset_right = 39.0
 offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/font_color = Color(0.29411766, 0.23529412, 0.25490198, 1)
 text = "SCORE = 0"
 
 [node name="Fade" type="ColorRect" parent="HUD"]
