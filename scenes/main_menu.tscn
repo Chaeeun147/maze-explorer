@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://c15t1omwfrbse"]
 
-[ext_resource type="Script" uid="uid://ctbe3gwi01o34" path="res://main_menu.gd" id="1_bqqt6"]
+[ext_resource type="Script" uid="uid://ctbe3gwi01o34" path="res://scripts/main_menu.gd" id="1_bqqt6"]
 [ext_resource type="Texture2D" uid="uid://ge2n7x2fcmyo" path="res://assets/images/background menu/game menu.png" id="2_wu84c"]
 [ext_resource type="Texture2D" uid="uid://clg2tb203ceml" path="res://assets/images/background menu/cappy maze explorer sign.png" id="3_8ln24"]
 
@@ -43,7 +43,7 @@ offset_bottom = 348.0
 size_flags_horizontal = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_rhts7")
 
-[node name="Button" type="Button" parent="."]
+[node name="Start" type="Button" parent="."]
 texture_filter = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -73,4 +73,4 @@ position = Vector2(-21, 190.99997)
 scale = Vector2(1.7664927, 1.7664928)
 texture = ExtResource("3_8ln24")
 
-[connection signal="pressed" from="Button" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
