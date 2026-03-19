@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bfffv6dsqb2sg"]
 
-[ext_resource type="Texture2D" uid="uid://cprf5pknilhrv" path="res://assets/images/level 4/pillow.png" id="1_hg3ry"]
+[ext_resource type="Texture2D" uid="uid://cprf5pknilhrv" path="res://assets/images/level 3/pillow.png" id="1_hg3ry"]
 
 [node name="Pillow" type="Sprite2D"]
 texture_filter = 1

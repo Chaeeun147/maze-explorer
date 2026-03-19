@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bfpbermi0ac5a"]
 
-[ext_resource type="Texture2D" uid="uid://bsgxaq8a7ltwu" path="res://assets/images/level 3/fridge.png" id="1_ipvyg"]
+[ext_resource type="Texture2D" uid="uid://bsgxaq8a7ltwu" path="res://assets/images/level 2/fridge.png" id="1_ipvyg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sp1gv"]
 size = Vector2(616, 1032)

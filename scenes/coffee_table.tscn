@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dr4ibnpjh65fa"]
 
-[ext_resource type="Texture2D" uid="uid://ipa88ot6yhpx" path="res://assets/images/level 4/coffee table.png" id="1_jeqcp"]
+[ext_resource type="Texture2D" uid="uid://ipa88ot6yhpx" path="res://assets/images/level 3/coffee table.png" id="1_jeqcp"]
 
 [node name="Coffee Table" type="Sprite2D"]
 scale = Vector2(0.5, 0.5)

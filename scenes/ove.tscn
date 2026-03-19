@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cu4sceoimyfa7"]
 
-[ext_resource type="Texture2D" uid="uid://dpbm18vfypy0l" path="res://assets/images/level 3/oven.png" id="1_oooh0"]
+[ext_resource type="Texture2D" uid="uid://dpbm18vfypy0l" path="res://assets/images/level 2/oven.png" id="1_oooh0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u37le"]
 size = Vector2(924, 988)

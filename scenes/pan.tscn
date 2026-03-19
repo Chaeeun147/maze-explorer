@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://gkhtlko885q2"]
 
-[ext_resource type="Texture2D" uid="uid://dlu6g2d5622kp" path="res://assets/images/level 3/pan.png" id="1_siqbj"]
+[ext_resource type="Texture2D" uid="uid://dlu6g2d5622kp" path="res://assets/images/level 2/pan.png" id="1_siqbj"]
 
 [sub_resource type="Animation" id="Animation_bkvwt"]
 length = 0.001

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://u0npjpr5kwib"]
 
-[ext_resource type="Texture2D" uid="uid://c8x2l24423r81" path="res://assets/images/level 3/fliped spoon.png" id="1_hbioi"]
+[ext_resource type="Texture2D" uid="uid://c8x2l24423r81" path="res://assets/images/level 2/fliped spoon.png" id="1_hbioi"]
 
 [node name="Fork" type="Sprite2D"]
 texture_filter = 1

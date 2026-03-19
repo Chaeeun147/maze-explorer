@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bdm2t2f0xhnc4"]
 
-[ext_resource type="Texture2D" uid="uid://duo5mb0enxx2o" path="res://assets/images/level 4/game controler.png" id="1_vq0e2"]
+[ext_resource type="Texture2D" uid="uid://duo5mb0enxx2o" path="res://assets/images/level 3/game controler.png" id="1_vq0e2"]
 
 [node name="Game Controller" type="Sprite2D"]
 texture_filter = 1
