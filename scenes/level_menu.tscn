@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://vfebfkd5idvc"]
+[gd_scene load_steps=21 format=3 uid="uid://vfebfkd5idvc"]
 
 [ext_resource type="Script" uid="uid://byow0uyjrnyx2" path="res://scenes/level_menu.gd" id="1_k08aj"]
 [ext_resource type="Texture2D" uid="uid://c10n55r271eo5" path="res://assets/images/menu/wooden background.png" id="1_yl4fo"]
@@ -6,53 +6,151 @@
 [ext_resource type="Texture2D" uid="uid://c1ju3pw38k53u" path="res://assets/images/menu/level 2 icon.png" id="3_7obll"]
 [ext_resource type="Texture2D" uid="uid://cgyyv4wwe4nho" path="res://assets/images/menu/level3 icon.png" id="4_teein"]
 [ext_resource type="Texture2D" uid="uid://clg2tb203ceml" path="res://assets/images/menu/cappy maze explorer sign.png" id="6_2go0k"]
+[ext_resource type="Texture2D" uid="uid://c7vfnibqwqsme" path="res://assets/images/player/Idle Capy.png" id="7_2go0k"]
+[ext_resource type="Texture2D" uid="uid://btrpy7ig82s1r" path="res://assets/images/menu/level 1 sign.png" id="8_qdp46"]
+[ext_resource type="Texture2D" uid="uid://clj8l5n6mxc6t" path="res://assets/images/menu/level 2 sign.png" id="9_6flmm"]
+[ext_resource type="Texture2D" uid="uid://bnhquajx7cxok" path="res://assets/images/menu/level 3 sign.png" id="10_wxgv2"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rj3wb"]
 texture = ExtResource("1_yl4fo")
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_qdp46"]
+atlas = ExtResource("7_2go0k")
+region = Rect2(0, 0, 704, 704)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u0fjm"]
+atlas = ExtResource("7_2go0k")
+region = Rect2(704, 0, 704, 704)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6flmm"]
+atlas = ExtResource("7_2go0k")
+region = Rect2(1408, 0, 704, 704)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wxgv2"]
+atlas = ExtResource("7_2go0k")
+region = Rect2(0, 704, 704, 704)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_frxpb"]
+atlas = ExtResource("7_2go0k")
+region = Rect2(704, 704, 704, 704)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_35reb"]
+atlas = ExtResource("7_2go0k")
+region = Rect2(1408, 704, 704, 704)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yedrf"]
+atlas = ExtResource("7_2go0k")
+region = Rect2(0, 1408, 704, 704)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tkofx"]
+atlas = ExtResource("7_2go0k")
+region = Rect2(704, 1408, 704, 704)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qc6d6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qdp46")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u0fjm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6flmm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wxgv2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_frxpb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_35reb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yedrf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tkofx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
 [node name="LevelMenu" type="Node2D"]
+position = Vector2(0, -27)
 script = ExtResource("1_k08aj")
 
 [node name="Panel" type="Panel" parent="."]
 texture_filter = 1
+offset_top = 27.0
 offset_right = 1280.0
-offset_bottom = 720.0
+offset_bottom = 747.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_rj3wb")
 
 [node name="Button Manager" type="Node2D" parent="."]
 
 [node name="Level 1" type="Button" parent="Button Manager"]
 texture_filter = 1
-offset_left = 422.0
-offset_top = 63.0
-offset_right = 651.0
-offset_bottom = 271.0
+offset_left = 65.0
+offset_top = 148.0
+offset_right = 294.0
+offset_bottom = 356.0
 icon = ExtResource("2_rj3wb")
 metadata/_edit_use_anchors_ = true
 
 [node name="Level 2" type="Button" parent="Button Manager"]
 texture_filter = 1
-offset_left = 704.0
-offset_top = 63.0
-offset_right = 923.0
-offset_bottom = 271.0
+offset_left = 347.0
+offset_top = 148.0
+offset_right = 566.0
+offset_bottom = 356.0
 icon = ExtResource("3_7obll")
 metadata/_edit_use_anchors_ = true
 
 [node name="Level 3" type="Button" parent="Button Manager"]
 texture_filter = 1
-offset_left = 977.0
-offset_top = 63.0
-offset_right = 1209.0
-offset_bottom = 271.0
+offset_left = 620.0
+offset_top = 148.0
+offset_right = 852.0
+offset_bottom = 356.0
 icon = ExtResource("4_teein")
 metadata/_edit_use_anchors_ = true
 
+[node name="Level Signs" type="Node2D" parent="."]
+
+[node name="Level1Sign" type="Sprite2D" parent="Level Signs"]
+texture_filter = 1
+position = Vector2(208.99998, 91.00002)
+scale = Vector2(0.17, 0.17)
+texture = ExtResource("8_qdp46")
+
+[node name="Level2Sign" type="Sprite2D" parent="Level Signs"]
+texture_filter = 1
+position = Vector2(485.9999, 91.000015)
+scale = Vector2(0.17, 0.17)
+texture = ExtResource("9_6flmm")
+
+[node name="Level3Sign" type="Sprite2D" parent="Level Signs"]
+texture_filter = 1
+position = Vector2(748.00006, 91.000015)
+scale = Vector2(0.17, 0.17)
+texture = ExtResource("10_wxgv2")
+
 [node name="CappyMazeExplorerSign" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(213, 157)
+position = Vector2(1064.0001, 209)
 scale = Vector2(1.7664927, 1.7664928)
 texture = ExtResource("6_2go0k")
+
+[node name="Cappy" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(154.00002, 595.00006)
+scale = Vector2(0.23668323, 0.23668323)
+sprite_frames = SubResource("SpriteFrames_qc6d6")
+autoplay = "default"
+frame_progress = 0.7324775
 
 [connection signal="pressed" from="Button Manager/Level 1" to="." method="_on_level_1_pressed"]
 [connection signal="pressed" from="Button Manager/Level 2" to="." method="_on_level_2_pressed"]
