@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://vfebfkd5idvc"]
+[gd_scene load_steps=26 format=3 uid="uid://vfebfkd5idvc"]
 
 [ext_resource type="Script" uid="uid://byow0uyjrnyx2" path="res://scenes/level_menu.gd" id="1_k08aj"]
 [ext_resource type="Texture2D" uid="uid://c10n55r271eo5" path="res://assets/images/menu/wooden background.png" id="1_yl4fo"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://c1ju3pw38k53u" path="res://assets/images/menu/level 2 icon.png" id="3_7obll"]
 [ext_resource type="Texture2D" uid="uid://cgyyv4wwe4nho" path="res://assets/images/menu/level3 icon.png" id="4_teein"]
 [ext_resource type="Texture2D" uid="uid://clg2tb203ceml" path="res://assets/images/menu/cappy maze explorer sign.png" id="6_2go0k"]
+[ext_resource type="AudioStream" uid="uid://bfs0rvcfdw5va" path="res://assets/sound/click sound.mp3" id="6_wxgv2"]
 [ext_resource type="Texture2D" uid="uid://c7vfnibqwqsme" path="res://assets/images/player/Idle Capy.png" id="7_2go0k"]
 [ext_resource type="Texture2D" uid="uid://btrpy7ig82s1r" path="res://assets/images/menu/level 1 sign.png" id="8_qdp46"]
 [ext_resource type="Texture2D" uid="uid://clj8l5n6mxc6t" path="res://assets/images/menu/level 2 sign.png" id="9_6flmm"]
@@ -177,6 +178,10 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_wxgv2")
 theme_override_styles/hover = SubResource("StyleBoxFlat_frxpb")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_35reb")
 text = "HOME"
+
+[node name="Click" type="AudioStreamPlayer" parent="Button Manager"]
+stream = ExtResource("6_wxgv2")
+volume_db = 5.0
 
 [node name="Level Signs" type="Node2D" parent="."]
 
