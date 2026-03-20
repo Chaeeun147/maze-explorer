@@ -238,6 +238,9 @@ position = Vector2(1955, -215)
 [node name="Turtle6" parent="Turtles" instance=ExtResource("7_hgky1")]
 position = Vector2(2350, 586)
 
+[node name="Player" parent="." instance=ExtResource("5_gycjm")]
+position = Vector2(-795.00006, 632)
+
 [node name="Exit" type="Area2D" parent="."]
 position = Vector2(7184, -338)
 metadata/_edit_group_ = true
@@ -276,6 +279,3 @@ scale = Vector2(9.8, 9.8)
 [node name="MovingPlatform3" parent="Moving Platform" instance=ExtResource("15_hkuam")]
 position = Vector2(1783.331, 6400)
 scale = Vector2(9.8, 9.8)
-
-[node name="Player" parent="." instance=ExtResource("5_gycjm")]
-position = Vector2(-795.00006, 632)

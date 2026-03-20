@@ -244,6 +244,9 @@ metadata/_edit_group_ = true
 position = Vector2(100, 21.5)
 shape = SubResource("RectangleShape2D_2r1tl")
 
+[node name="Player" parent="." instance=ExtResource("5_72x3h")]
+position = Vector2(-3217, 861)
+
 [node name="Table" type="Sprite2D" parent="."]
 position = Vector2(3485, 822)
 scale = Vector2(0.33153415, 0.33153418)
@@ -280,6 +283,3 @@ scale = Vector2(0.34545448, 0.34545448)
 
 [node name="Fridge" parent="." instance=ExtResource("35_ul42b")]
 position = Vector2(4600, 637)
-
-[node name="Player" parent="." instance=ExtResource("5_72x3h")]
-position = Vector2(-3217, 861)

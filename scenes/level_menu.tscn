@@ -176,7 +176,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_6flmm")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_wxgv2")
 theme_override_styles/hover = SubResource("StyleBoxFlat_frxpb")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_35reb")
-text = "EXIT"
+text = "HOME"
 
 [node name="Level Signs" type="Node2D" parent="."]
 

@@ -55,16 +55,12 @@ func die() -> void:
 	animated_sprite_2d.animation = \"dying\"
 	alive = false
 
-#--------------------------
-# BUTTON
-#--------------------------
-
 func _on_exit_pressed() -> void:
 	get_tree().change_scene_to_file(\"res://scenes/main_menu.tscn\")
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b26j0"]
-size = Vector2(466.66666, 480)
+size = Vector2(466.66663, 480)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qlg0r"]
 atlas = ExtResource("1_dqkch")
@@ -278,54 +274,47 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dqkch"]
-bg_color = Color(0.8378784, 0.65704745, 0.6493673, 1)
-border_width_left = 19
-border_width_top = 19
-border_width_right = 19
-border_width_bottom = 19
-border_color = Color(0.68235296, 0.45490196, 0.4509804, 1)
-border_blend = true
-corner_radius_top_left = 40
-corner_radius_top_right = 40
-corner_radius_bottom_right = 40
-corner_radius_bottom_left = 40
-shadow_size = 15
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qlg0r"]
-bg_color = Color(0.68394554, 0.45584583, 0.44904506, 1)
-border_width_left = 19
-border_width_top = 19
-border_width_right = 19
-border_width_bottom = 19
+bg_color = Color(0.8378784, 0.65704745, 0.6493673, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
 border_color = Color(0.68235296, 0.45490196, 0.4509804, 1)
 border_blend = true
-corner_radius_top_left = 40
-corner_radius_top_right = 40
-corner_radius_bottom_right = 40
-corner_radius_bottom_left = 40
-shadow_size = 15
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tuyoq"]
-bg_color = Color(0.80602276, 0.6044769, 0.59643894, 1)
-border_width_left = 19
-border_width_top = 19
-border_width_right = 19
-border_width_bottom = 19
-border_color = Color(0.68235296, 0.45490196, 0.4509804, 1)
-border_blend = true
-corner_radius_top_left = 40
-corner_radius_top_right = 40
-corner_radius_bottom_right = 40
-corner_radius_bottom_left = 40
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
 shadow_size = 3
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fjrip"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tuyoq"]
+bg_color = Color(0.68394554, 0.45584583, 0.44904506, 1)
+border_color = Color(0.68235296, 0.45490196, 0.4509804, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_size = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fjrip"]
+bg_color = Color(0.80602276, 0.6044769, 0.59643894, 1)
+border_color = Color(0.68235296, 0.45490196, 0.4509804, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_size = 3
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_smehm"]
 
 [node name="Player" type="CharacterBody2D"]
-position = Vector2(66, 76)
+position = Vector2(627, 585)
 scale = Vector2(0.15, 0.15)
 script = SubResource("GDScript_dqkch")
+metadata/_edit_horizontal_guides_ = [-1222.0]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-20, -146.66666)
@@ -341,28 +330,31 @@ autoplay = "idle"
 position = Vector2(86.66666, -1500)
 scale = Vector2(-220597220, 115279540000)
 
-[node name="Exit" type="Button" parent="."]
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="Exit" type="Button" parent="HUD"]
 texture_filter = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -4033.33
-offset_top = -3773.3281
-offset_right = -3326.6633
-offset_bottom = -3419.9946
+offset_left = -615.0
+offset_top = -699.0
+offset_right = -515.0
+offset_bottom = -649.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_colors/font_color = Color(0.2951374, 0.23526816, 0.25609225, 1)
 theme_override_colors/font_focus_color = Color(0.29411766, 0.23529412, 0.25490198, 1)
 theme_override_colors/font_pressed_color = Color(0.20334524, 0.15912107, 0.17388394, 1)
 theme_override_colors/font_hover_color = Color(0.25594032, 0.20314506, 0.22075585, 1)
-theme_override_font_sizes/font_size = 120
-theme_override_styles/normal = SubResource("StyleBoxFlat_dqkch")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_qlg0r")
-theme_override_styles/hover = SubResource("StyleBoxFlat_tuyoq")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_fjrip")
-text = "EXIT"
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_qlg0r")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_tuyoq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_fjrip")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_smehm")
+text = "HOME
+"
 
-[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="HUD/Exit" to="." method="_on_exit_pressed"]

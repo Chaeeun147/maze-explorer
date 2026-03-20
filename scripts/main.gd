@@ -95,7 +95,7 @@ func _fade(to_alpha: float) -> void:
 	await tween.finished
 
 #--------------------------
-# BUTTON
+# BUTTONS
 #--------------------------
 
 func _on_exit_pressed() -> void:
