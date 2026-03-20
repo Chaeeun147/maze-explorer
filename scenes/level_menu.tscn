@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://vfebfkd5idvc"]
+[gd_scene load_steps=25 format=3 uid="uid://vfebfkd5idvc"]
 
 [ext_resource type="Script" uid="uid://byow0uyjrnyx2" path="res://scenes/level_menu.gd" id="1_k08aj"]
 [ext_resource type="Texture2D" uid="uid://c10n55r271eo5" path="res://assets/images/menu/wooden background.png" id="1_yl4fo"]
@@ -13,6 +13,42 @@
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rj3wb"]
 texture = ExtResource("1_yl4fo")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6flmm"]
+bg_color = Color(0.8378784, 0.65704745, 0.6493673, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.68235296, 0.45490196, 0.4509804, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_size = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wxgv2"]
+bg_color = Color(0.68394554, 0.45584583, 0.44904506, 1)
+border_color = Color(0.68235296, 0.45490196, 0.4509804, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_size = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_frxpb"]
+bg_color = Color(0.80602276, 0.6044769, 0.59643894, 1)
+border_color = Color(0.68235296, 0.45490196, 0.4509804, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_size = 3
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_35reb"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qdp46"]
 atlas = ExtResource("7_2go0k")
@@ -94,53 +130,77 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_rj3wb")
 [node name="Level 1" type="Button" parent="Button Manager"]
 texture_filter = 1
 offset_left = 65.0
-offset_top = 148.0
+offset_top = 190.83998
 offset_right = 294.0
-offset_bottom = 356.0
+offset_bottom = 398.83997
 icon = ExtResource("2_rj3wb")
 metadata/_edit_use_anchors_ = true
 
 [node name="Level 2" type="Button" parent="Button Manager"]
 texture_filter = 1
 offset_left = 347.0
-offset_top = 148.0
+offset_top = 190.83998
 offset_right = 566.0
-offset_bottom = 356.0
+offset_bottom = 398.83997
 icon = ExtResource("3_7obll")
 metadata/_edit_use_anchors_ = true
 
 [node name="Level 3" type="Button" parent="Button Manager"]
 texture_filter = 1
 offset_left = 620.0
-offset_top = 148.0
+offset_top = 190.83998
 offset_right = 852.0
-offset_bottom = 356.0
+offset_bottom = 398.83997
 icon = ExtResource("4_teein")
 metadata/_edit_use_anchors_ = true
+
+[node name="Exit" type="Button" parent="Button Manager"]
+texture_filter = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = 54.0
+offset_right = 124.0
+offset_bottom = 104.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.2951374, 0.23526816, 0.25609225, 1)
+theme_override_colors/font_focus_color = Color(0.29411766, 0.23529412, 0.25490198, 1)
+theme_override_colors/font_pressed_color = Color(0.20334524, 0.15912107, 0.17388394, 1)
+theme_override_colors/font_hover_color = Color(0.25594032, 0.20314506, 0.22075585, 1)
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_6flmm")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wxgv2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_frxpb")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_35reb")
+text = "EXIT"
 
 [node name="Level Signs" type="Node2D" parent="."]
 
 [node name="Level1Sign" type="Sprite2D" parent="Level Signs"]
 texture_filter = 1
-position = Vector2(208.99998, 91.00002)
+position = Vector2(208.99998, 133.84)
 scale = Vector2(0.17, 0.17)
 texture = ExtResource("8_qdp46")
 
 [node name="Level2Sign" type="Sprite2D" parent="Level Signs"]
 texture_filter = 1
-position = Vector2(485.9999, 91.000015)
+position = Vector2(485.9999, 133.84)
 scale = Vector2(0.17, 0.17)
 texture = ExtResource("9_6flmm")
 
 [node name="Level3Sign" type="Sprite2D" parent="Level Signs"]
 texture_filter = 1
-position = Vector2(748.00006, 91.000015)
+position = Vector2(748.00006, 133.84)
 scale = Vector2(0.17, 0.17)
 texture = ExtResource("10_wxgv2")
 
 [node name="CappyMazeExplorerSign" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(1064.0001, 209)
+position = Vector2(1064.0001, 258)
 scale = Vector2(1.7664927, 1.7664928)
 texture = ExtResource("6_2go0k")
 
@@ -155,3 +215,4 @@ frame_progress = 0.7324775
 [connection signal="pressed" from="Button Manager/Level 1" to="." method="_on_level_1_pressed"]
 [connection signal="pressed" from="Button Manager/Level 2" to="." method="_on_level_2_pressed"]
 [connection signal="pressed" from="Button Manager/Level 3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="Button Manager/Exit" to="." method="_on_exit_pressed"]
