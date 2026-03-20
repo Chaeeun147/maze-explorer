@@ -227,7 +227,7 @@ scale = Vector2(0.25500003, 0.25500003)
 position = Vector2(1397, -226)
 
 [node name="Turtle2" parent="Turtles" instance=ExtResource("7_hgky1")]
-position = Vector2(4217, -90)
+position = Vector2(3597, -746)
 
 [node name="Turtle3" parent="Turtles" instance=ExtResource("7_hgky1")]
 position = Vector2(6202, 114)

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clg2tb203ceml"
-path="res://.godot/imported/cappy maze explorer sign.png-51fadde5ad5233e00a07633ec2e12e53.ctex"
+uid="uid://c10n55r271eo5"
+path="res://.godot/imported/wooden background.png-a26566c0bca7dd13534ebad78a07eb89.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/background menu/cappy maze explorer sign.png"
-dest_files=["res://.godot/imported/cappy maze explorer sign.png-51fadde5ad5233e00a07633ec2e12e53.ctex"]
+source_file="res://assets/images/menu/wooden background.png"
+dest_files=["res://.godot/imported/wooden background.png-a26566c0bca7dd13534ebad78a07eb89.ctex"]
 
 [params]
 

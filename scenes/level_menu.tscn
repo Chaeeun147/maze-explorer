@@ -1,7 +1,59 @@
-[gd_scene format=3 uid="uid://vfebfkd5idvc"]
+[gd_scene load_steps=8 format=3 uid="uid://vfebfkd5idvc"]
+
+[ext_resource type="Script" uid="uid://byow0uyjrnyx2" path="res://scenes/level_menu.gd" id="1_k08aj"]
+[ext_resource type="Texture2D" uid="uid://c10n55r271eo5" path="res://assets/images/menu/wooden background.png" id="1_yl4fo"]
+[ext_resource type="Texture2D" uid="uid://cyr5c2oh020dr" path="res://assets/images/menu/level 1 icon.png" id="2_rj3wb"]
+[ext_resource type="Texture2D" uid="uid://c1ju3pw38k53u" path="res://assets/images/menu/level 2 icon.png" id="3_7obll"]
+[ext_resource type="Texture2D" uid="uid://cgyyv4wwe4nho" path="res://assets/images/menu/level3 icon.png" id="4_teein"]
+[ext_resource type="Texture2D" uid="uid://clg2tb203ceml" path="res://assets/images/menu/cappy maze explorer sign.png" id="6_2go0k"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rj3wb"]
+texture = ExtResource("1_yl4fo")
 
 [node name="LevelMenu" type="Node2D"]
+script = ExtResource("1_k08aj")
 
 [node name="Panel" type="Panel" parent="."]
+texture_filter = 1
 offset_right = 1280.0
 offset_bottom = 720.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_rj3wb")
+
+[node name="Button Manager" type="Node2D" parent="."]
+
+[node name="Level 1" type="Button" parent="Button Manager"]
+texture_filter = 1
+offset_left = 422.0
+offset_top = 63.0
+offset_right = 651.0
+offset_bottom = 271.0
+icon = ExtResource("2_rj3wb")
+metadata/_edit_use_anchors_ = true
+
+[node name="Level 2" type="Button" parent="Button Manager"]
+texture_filter = 1
+offset_left = 704.0
+offset_top = 63.0
+offset_right = 923.0
+offset_bottom = 271.0
+icon = ExtResource("3_7obll")
+metadata/_edit_use_anchors_ = true
+
+[node name="Level 3" type="Button" parent="Button Manager"]
+texture_filter = 1
+offset_left = 977.0
+offset_top = 63.0
+offset_right = 1209.0
+offset_bottom = 271.0
+icon = ExtResource("4_teein")
+metadata/_edit_use_anchors_ = true
+
+[node name="CappyMazeExplorerSign" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(213, 157)
+scale = Vector2(1.7664927, 1.7664928)
+texture = ExtResource("6_2go0k")
+
+[connection signal="pressed" from="Button Manager/Level 1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="Button Manager/Level 2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="Button Manager/Level 3" to="." method="_on_level_3_pressed"]

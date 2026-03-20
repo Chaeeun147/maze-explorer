@@ -103,7 +103,7 @@ position = Vector2(-169.1585, 68.52296)
 texture = ExtResource("5_dc8aq")
 
 [node name="YellowCeilingLights" type="Sprite2D" parent="."]
-position = Vector2(5948.874, 387.0001)
+position = Vector2(6256.874, 387.00003)
 scale = Vector2(0.289, 0.289)
 texture = ExtResource("6_5bnxw")
 
@@ -142,7 +142,7 @@ scale = Vector2(0.45871213, 0.45871213)
 texture = ExtResource("11_q7jno")
 
 [node name="Shortest Bookshelf" parent="." instance=ExtResource("12_ojfwg")]
-position = Vector2(5948.875, 526.4186)
+position = Vector2(6256.875, 526.4186)
 scale = Vector2(1.7169126, 2.268992)
 
 [node name="Tv" type="Sprite2D" parent="."]
@@ -153,7 +153,7 @@ texture = ExtResource("13_8n51c")
 
 [node name="Window" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(6910.474, 672.0001)
+position = Vector2(7218.474, 672.0001)
 scale = Vector2(0.4727271, 0.47272733)
 texture = ExtResource("14_dvr8a")
 
@@ -184,7 +184,7 @@ texture = ExtResource("29_dc8aq")
 
 [node name="Sr5z61619c6Ce8Aws3" type="Sprite2D" parent="Seoeun Plants"]
 texture_filter = 1
-position = Vector2(6505.4746, 759.0001)
+position = Vector2(6813.4746, 759.00006)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("28_ul42b")
 
@@ -195,19 +195,19 @@ texture = ExtResource("27_d1mne")
 
 [node name="Sr5z41Dd84Fadeaws3" type="Sprite2D" parent="Seoeun Plants"]
 texture_filter = 1
-position = Vector2(7440.474, 758.00024)
+position = Vector2(7748.4746, 758.0002)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("26_0y7c6")
 
 [node name="Sr5z7a12c7b99Baws3" type="Sprite2D" parent="Seoeun Plants"]
 texture_filter = 1
-position = Vector2(7309.6733, 758.0002)
+position = Vector2(7617.674, 758.0001)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("25_rfqup")
 
 [node name="Sr5Zccb1b01327Aws3" type="Sprite2D" parent="Seoeun Plants"]
 texture_filter = 1
-position = Vector2(6357.4746, 759.0001)
+position = Vector2(6665.4746, 759.00006)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("24_lsxft")
 
@@ -240,7 +240,7 @@ position = Vector2(-2009, 795.99994)
 scale = Vector2(0.12247481, 0.12247481)
 
 [node name="Coffee Table2" parent="." instance=ExtResource("27_4gra6")]
-position = Vector2(4214, -1338.9998)
+position = Vector2(5816, 819.00006)
 scale = Vector2(0.31, 0.31)
 
 [node name="Coffee Table" parent="." instance=ExtResource("27_4gra6")]
@@ -271,7 +271,7 @@ position = Vector2(-445, -484)
 position = Vector2(-320, -456)
 
 [node name="Turtle3" parent="Turtles" instance=ExtResource("7_ah4rv")]
-position = Vector2(4563, -1844)
+position = Vector2(6256, 599)
 
 [node name="Turtle6" parent="Turtles" instance=ExtResource("7_ah4rv")]
 position = Vector2(-2137, 768)
