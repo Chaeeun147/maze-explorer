@@ -196,9 +196,6 @@ position = Vector2(2075, 606)
 scale = Vector2(0.20596586, 0.20596586)
 texture = ExtResource("8_gycjm")
 
-[node name="Player" parent="." instance=ExtResource("5_gycjm")]
-position = Vector2(-795.00006, 632)
-
 [node name="Enemies" type="Node2D" parent="."]
 
 [node name="Jaguar2" parent="Enemies" instance=ExtResource("6_8i1lk")]
@@ -279,3 +276,6 @@ scale = Vector2(9.8, 9.8)
 [node name="MovingPlatform3" parent="Moving Platform" instance=ExtResource("15_hkuam")]
 position = Vector2(1783.331, 6400)
 scale = Vector2(9.8, 9.8)
+
+[node name="Player" parent="." instance=ExtResource("5_gycjm")]
+position = Vector2(-795.00006, 632)

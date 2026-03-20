@@ -253,9 +253,6 @@ position = Vector2(8340, 607)
 scale = Vector2(0.59261507, 0.59261507)
 texture = ExtResource("5_ul42b")
 
-[node name="Player" parent="." instance=ExtResource("5_72x3h")]
-position = Vector2(-3321, 860)
-
 [node name="OrangeCat" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(5405.208, 848.7499)
@@ -297,3 +294,6 @@ texture_filter = 1
 position = Vector2(-3051.5464, 822.50006)
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("17_ahaer")
+
+[node name="Player" parent="." instance=ExtResource("5_72x3h")]
+position = Vector2(-3321, 860)
