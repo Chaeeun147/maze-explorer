@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxodorxp4p1nl"]
+
+[ext_resource type="AudioStream" uid="uid://cxcadwq67iero" path="res://assets/sound/Moavii - Warm Cup of Coffe (freetouse.com).mp3" id="1_f6gl3"]
+
+[node name="BG Music" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_f6gl3")
+autoplay = true
