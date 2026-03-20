@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cdpf4a67uetuf"
-path="res://.godot/imported/pink castle asset.png-443a02c12d1b5d7b07d15223be489889.ctex"
+uid="uid://d2f8hoqcunkka"
+path="res://.godot/imported/controls.png-9f00e31339078a91cfbfaaa62edb0a83.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/backround items/pink castle asset.png"
-dest_files=["res://.godot/imported/pink castle asset.png-443a02c12d1b5d7b07d15223be489889.ctex"]
+source_file="res://assets/images/level 1/controls.png"
+dest_files=["res://.godot/imported/controls.png-9f00e31339078a91cfbfaaa62edb0a83.ctex"]
 
 [params]
 

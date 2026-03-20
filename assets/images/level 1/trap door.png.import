@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b5dh0hf84h07b"
-path="res://.godot/imported/pink chest.png-b6d6d28e5a87f3aba3d5321a15b9a02f.ctex"
+uid="uid://cmrf62flqsr81"
+path="res://.godot/imported/trap door.png-fdf1154628153f6f5d5cd0d3764dee78.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/backround items/pink chest.png"
-dest_files=["res://.godot/imported/pink chest.png-b6d6d28e5a87f3aba3d5321a15b9a02f.ctex"]
+source_file="res://assets/images/level 1/trap door.png"
+dest_files=["res://.godot/imported/trap door.png-fdf1154628153f6f5d5cd0d3764dee78.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgwaseoqxyxsg"
-path="res://.godot/imported/highbury frame 256 x 144.png-39752fef7c0ebb5060cdb720821a217e.ctex"
+uid="uid://b5dh0hf84h07b"
+path="res://.godot/imported/pink chest.png-2580c314640115af717c93c3762e65d4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/backround items/highbury frame 256 x 144.png"
-dest_files=["res://.godot/imported/highbury frame 256 x 144.png-39752fef7c0ebb5060cdb720821a217e.ctex"]
+source_file="res://assets/images/level 1/pink chest.png"
+dest_files=["res://.godot/imported/pink chest.png-2580c314640115af717c93c3762e65d4.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2f8hoqcunkka"
-path="res://.godot/imported/controls.png-a0adfa84ae8955b41616dd4ef02a8f38.ctex"
+uid="uid://dgwaseoqxyxsg"
+path="res://.godot/imported/highbury frame 256 x 144.png-5bd3fc0803ffc2b154817b479b5780fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/backround items/controls.png"
-dest_files=["res://.godot/imported/controls.png-a0adfa84ae8955b41616dd4ef02a8f38.ctex"]
+source_file="res://assets/images/level 1/highbury frame 256 x 144.png"
+dest_files=["res://.godot/imported/highbury frame 256 x 144.png-5bd3fc0803ffc2b154817b479b5780fb.ctex"]
 
 [params]
 

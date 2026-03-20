@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d12jrakensfnv"
-path="res://.godot/imported/level 2 entrance pink tree 128 x 128 x 16.png-441291890092864024a7260e0c243230.ctex"
+uid="uid://c5d7cmfcl083f"
+path="res://.godot/imported/pink tree.png-df8d3437a208769dd85221f8f33dc99e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/backround items/level 2 entrance pink tree 128 x 128 x 16.png"
-dest_files=["res://.godot/imported/level 2 entrance pink tree 128 x 128 x 16.png-441291890092864024a7260e0c243230.ctex"]
+source_file="res://assets/images/level 1/pink tree.png"
+dest_files=["res://.godot/imported/pink tree.png-df8d3437a208769dd85221f8f33dc99e.ctex"]
 
 [params]
 

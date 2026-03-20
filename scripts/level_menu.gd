@@ -34,4 +34,4 @@ func _on_level_3_pressed() -> void:
 func _on_exit_pressed() -> void:
 	$"Button Manager/Click".play()
 	await get_tree().create_timer(0.2).timeout
-	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
+	get_tree().change_scene_to_file("res://scenes/menus/main_menu.tscn")

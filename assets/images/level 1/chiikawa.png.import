@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dxvsb2bv4cx2c"
-path="res://.godot/imported/chiikawa.png-01983ea989abce001822c1383a895e85.ctex"
+path="res://.godot/imported/chiikawa.png-97151fc2ad8964dfd22cefed5eee4ff8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/backround items/chiikawa.png"
-dest_files=["res://.godot/imported/chiikawa.png-01983ea989abce001822c1383a895e85.ctex"]
+source_file="res://assets/images/level 1/chiikawa.png"
+dest_files=["res://.godot/imported/chiikawa.png-97151fc2ad8964dfd22cefed5eee4ff8.ctex"]
 
 [params]
 

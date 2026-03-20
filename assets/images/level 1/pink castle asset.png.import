@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmrf62flqsr81"
-path="res://.godot/imported/trap door.png-c0f70229963b7e00304e81c93d0eebc2.ctex"
+uid="uid://cdpf4a67uetuf"
+path="res://.godot/imported/pink castle asset.png-f8d392b5ea0b9998013218b822d32294.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/backround items/trap door.png"
-dest_files=["res://.godot/imported/trap door.png-c0f70229963b7e00304e81c93d0eebc2.ctex"]
+source_file="res://assets/images/level 1/pink castle asset.png"
+dest_files=["res://.godot/imported/pink castle asset.png-f8d392b5ea0b9998013218b822d32294.ctex"]
 
 [params]
 

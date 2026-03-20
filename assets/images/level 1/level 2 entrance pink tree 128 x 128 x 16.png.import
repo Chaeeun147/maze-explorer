@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsclka0pp3txm"
-path="res://.godot/imported/house from level 2 to 3 animation.png-508717f0edebf359ebcfd68b0de2b2fb.ctex"
+uid="uid://d12jrakensfnv"
+path="res://.godot/imported/level 2 entrance pink tree 128 x 128 x 16.png-cde6b033e6c48657bd38d10a9259bf68.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/backround items/house from level 2 to 3 animation.png"
-dest_files=["res://.godot/imported/house from level 2 to 3 animation.png-508717f0edebf359ebcfd68b0de2b2fb.ctex"]
+source_file="res://assets/images/level 1/level 2 entrance pink tree 128 x 128 x 16.png"
+dest_files=["res://.godot/imported/level 2 entrance pink tree 128 x 128 x 16.png-cde6b033e6c48657bd38d10a9259bf68.ctex"]
 
 [params]
 

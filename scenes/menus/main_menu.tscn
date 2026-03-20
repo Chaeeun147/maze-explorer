@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://c15t1omwfrbse"]
+[gd_scene load_steps=24 format=3 uid="uid://c15t1omwfrbse"]
 
 [ext_resource type="Script" uid="uid://ctbe3gwi01o34" path="res://scripts/main_menu.gd" id="1_bqqt6"]
 [ext_resource type="Texture2D" uid="uid://ge2n7x2fcmyo" path="res://assets/images/menu/game menu.png" id="2_wu84c"]
@@ -52,6 +52,42 @@ corner_radius_bottom_left = 16
 shadow_size = 8
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7vrkn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_imvie"]
+bg_color = Color(0.8378784, 0.65704745, 0.6493673, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.68235296, 0.45490196, 0.4509804, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_size = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ng0o5"]
+bg_color = Color(0.68394554, 0.45584583, 0.44904506, 1)
+border_color = Color(0.68235296, 0.45490196, 0.4509804, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_size = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8r73w"]
+bg_color = Color(0.80602276, 0.6044769, 0.59643894, 1)
+border_color = Color(0.68235296, 0.45490196, 0.4509804, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_size = 3
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1hnlc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qdp46"]
 atlas = ExtResource("4_wu84c")
@@ -141,7 +177,7 @@ anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = 178.0
 offset_top = 86.0
-offset_right = 564.0
+offset_right = 438.0
 offset_bottom = 191.0
 grow_horizontal = 2
 grow_vertical = 0
@@ -181,6 +217,30 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_fu7sn")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_7vrkn")
 text = "Start Game"
 
+[node name="Controls" type="Button" parent="Button Manager"]
+texture_filter = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 464.0
+offset_top = 141.0
+offset_right = 564.0
+offset_bottom = 191.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.2951374, 0.23526816, 0.25609225, 1)
+theme_override_colors/font_focus_color = Color(0.29411766, 0.23529412, 0.25490198, 1)
+theme_override_colors/font_pressed_color = Color(0.20334524, 0.15912107, 0.17388394, 1)
+theme_override_colors/font_hover_color = Color(0.25594032, 0.20314506, 0.22075585, 1)
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_imvie")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ng0o5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8r73w")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1hnlc")
+text = "Controls"
+
 [node name="Click" type="AudioStreamPlayer" parent="Button Manager"]
 stream = ExtResource("3_rtw2f")
 volume_db = 5.0
@@ -200,3 +260,4 @@ autoplay = "default"
 
 [connection signal="pressed" from="Button Manager/Levels" to="." method="_on_levels_pressed"]
 [connection signal="pressed" from="Button Manager/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Button Manager/Controls" to="." method="_on_controls_pressed"]

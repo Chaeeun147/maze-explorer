@@ -1,0 +1,165 @@
+[gd_scene load_steps=20 format=3 uid="uid://dweclsakjdlts"]
+
+[ext_resource type="Texture2D" uid="uid://c10n55r271eo5" path="res://assets/images/menu/wooden background.png" id="1_137nn"]
+[ext_resource type="Script" uid="uid://rpcxhyfh46en" path="res://scripts/control_menu.gd" id="1_p48e8"]
+[ext_resource type="AudioStream" uid="uid://bfs0rvcfdw5va" path="res://assets/sound/click sound.mp3" id="2_p48e8"]
+[ext_resource type="Texture2D" uid="uid://clg2tb203ceml" path="res://assets/images/menu/cappy maze explorer sign.png" id="3_o6p5c"]
+[ext_resource type="Texture2D" uid="uid://c7vfnibqwqsme" path="res://assets/images/player/Idle Capy.png" id="4_q05cc"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d3mkx"]
+texture = ExtResource("1_137nn")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ybrg6"]
+bg_color = Color(0.8378784, 0.65704745, 0.6493673, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.68235296, 0.45490196, 0.4509804, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_size = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bi30c"]
+bg_color = Color(0.68394554, 0.45584583, 0.44904506, 1)
+border_color = Color(0.68235296, 0.45490196, 0.4509804, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_size = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vslqm"]
+bg_color = Color(0.80602276, 0.6044769, 0.59643894, 1)
+border_color = Color(0.68235296, 0.45490196, 0.4509804, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_size = 3
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dvpfp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qdp46"]
+atlas = ExtResource("4_q05cc")
+region = Rect2(0, 0, 704, 704)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u0fjm"]
+atlas = ExtResource("4_q05cc")
+region = Rect2(704, 0, 704, 704)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6flmm"]
+atlas = ExtResource("4_q05cc")
+region = Rect2(1408, 0, 704, 704)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wxgv2"]
+atlas = ExtResource("4_q05cc")
+region = Rect2(0, 704, 704, 704)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_frxpb"]
+atlas = ExtResource("4_q05cc")
+region = Rect2(704, 704, 704, 704)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_35reb"]
+atlas = ExtResource("4_q05cc")
+region = Rect2(1408, 704, 704, 704)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yedrf"]
+atlas = ExtResource("4_q05cc")
+region = Rect2(0, 1408, 704, 704)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tkofx"]
+atlas = ExtResource("4_q05cc")
+region = Rect2(704, 1408, 704, 704)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fi4oi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qdp46")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u0fjm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6flmm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wxgv2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_frxpb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_35reb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yedrf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tkofx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
+[node name="ControlMenu" type="Node"]
+script = ExtResource("1_p48e8")
+
+[node name="Panel" type="Panel" parent="."]
+texture_filter = 1
+offset_right = 1280.0
+offset_bottom = 720.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_d3mkx")
+
+[node name="Button Manager" type="Node2D" parent="."]
+position = Vector2(0, -27)
+
+[node name="Exit" type="Button" parent="Button Manager"]
+texture_filter = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = 48.0
+offset_right = 124.0
+offset_bottom = 98.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.2951374, 0.23526816, 0.25609225, 1)
+theme_override_colors/font_focus_color = Color(0.29411766, 0.23529412, 0.25490198, 1)
+theme_override_colors/font_pressed_color = Color(0.20334524, 0.15912107, 0.17388394, 1)
+theme_override_colors/font_hover_color = Color(0.25594032, 0.20314506, 0.22075585, 1)
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_ybrg6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_bi30c")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vslqm")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dvpfp")
+text = "HOME"
+
+[node name="Click" type="AudioStreamPlayer" parent="Button Manager"]
+stream = ExtResource("2_p48e8")
+volume_db = 5.0
+
+[node name="CappyMazeExplorerSign" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1064.0001, 231)
+scale = Vector2(1.7664927, 1.7664928)
+texture = ExtResource("3_o6p5c")
+
+[node name="Cappy" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(154.00002, 568.00006)
+scale = Vector2(0.23668323, 0.23668323)
+sprite_frames = SubResource("SpriteFrames_fi4oi")
+autoplay = "default"
+
+[connection signal="pressed" from="Button Manager/Exit" to="." method="_on_exit_pressed"]

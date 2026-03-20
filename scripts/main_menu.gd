@@ -17,10 +17,16 @@ func _process(delta: float) -> void:
 func _on_start_pressed() -> void:
 	$"Button Manager/Click".play()
 	await get_tree().create_timer(0.2).timeout
-	get_tree().change_scene_to_file("res://scenes/Main.tscn")
+	get_tree().change_scene_to_file("res://scenes/menus/Main.tscn")
 
 
 func _on_levels_pressed() -> void:
 	$"Button Manager/Click".play()
 	await get_tree().create_timer(0.2).timeout
-	get_tree().change_scene_to_file("res://scenes/level_menu.tscn")
+	get_tree().change_scene_to_file("res://scenes/menus/level_menu.tscn")
+
+
+func _on_controls_pressed() -> void:
+	$"Button Manager/Click".play()
+	await get_tree().create_timer(0.2).timeout
+	get_tree().change_scene_to_file("res://scenes/menus/control_menu.tscn")
