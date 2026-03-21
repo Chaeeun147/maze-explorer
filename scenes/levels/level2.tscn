@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=4 uid="uid://dyra65guuinqm"]
+[gd_scene load_steps=40 format=4 uid="uid://dyra65guuinqm"]
 
 [ext_resource type="Texture2D" uid="uid://o1sqm28i1ji7" path="res://assets/images/level 2/kitchen wall tiles.png" id="1_f7rt6"]
 [ext_resource type="Texture2D" uid="uid://chfpdtg8f7sg3" path="res://assets/images/level 2/wall.png" id="2_7eb4w"]
@@ -28,6 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://diyrk7gh8ad6b" path="res://assets/images/level 2/Seoeun Plants/sr5zccb1b01327aws3.png" id="24_lsxft"]
 [ext_resource type="Texture2D" uid="uid://bx1aqlwmietdw" path="res://assets/images/level 2/Seoeun Plants/sr5z7a12c7b99baws3.png" id="25_rfqup"]
 [ext_resource type="Texture2D" uid="uid://3mygt2hwxhpa" path="res://assets/images/level 2/Seoeun Plants/sr5z41dd84fadeaws3.png" id="26_0y7c6"]
+[ext_resource type="Texture2D" uid="uid://cry01xqdegpre" path="res://assets/images/level 3/string.png" id="26_r00g1"]
 [ext_resource type="Texture2D" uid="uid://c1ig21yi3gl4w" path="res://assets/images/level 2/Seoeun Plants/sr5z614c2e99d1aws3.png" id="27_d1mne"]
 [ext_resource type="Texture2D" uid="uid://db6ce1k8qcm0h" path="res://assets/images/level 2/Seoeun Plants/sr5z61619c6ce8aws3.png" id="28_ul42b"]
 [ext_resource type="Texture2D" uid="uid://dfahkc62n883g" path="res://assets/images/level 2/Seoeun Plants/sr5zaad1042914aws3.png" id="29_dc8aq"]
@@ -204,6 +205,12 @@ position = Vector2(-2019, 440)
 scale = Vector2(2.114583, 2.114583)
 texture = ExtResource("3_7eb4w")
 
+[node name="String" type="Sprite2D" parent="HighburyFrame256X144"]
+texture_filter = 1
+position = Vector2(48.709366, -97.89162)
+scale = Vector2(1.6330053, 1.6330053)
+texture = ExtResource("26_r00g1")
+
 [node name="Enemies" type="Node2D" parent="."]
 
 [node name="Jaguar2" parent="Enemies" instance=ExtResource("6_wb0vq")]
@@ -244,6 +251,10 @@ metadata/_edit_group_ = true
 position = Vector2(100, 21.5)
 shape = SubResource("RectangleShape2D_2r1tl")
 
+[node name="Table with Static" parent="." instance=ExtResource("31_lsxft")]
+position = Vector2(918.00006, 802)
+scale = Vector2(0.34545448, 0.34545448)
+
 [node name="Player" parent="." instance=ExtResource("5_72x3h")]
 position = Vector2(-3217, 861)
 
@@ -276,10 +287,6 @@ texture_filter = 1
 position = Vector2(-641.00006, 819.00006)
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("17_ahaer")
-
-[node name="Table with Static" parent="." instance=ExtResource("31_lsxft")]
-position = Vector2(918.00006, 802)
-scale = Vector2(0.34545448, 0.34545448)
 
 [node name="Fridge" parent="." instance=ExtResource("35_ul42b")]
 position = Vector2(4600, 637)
