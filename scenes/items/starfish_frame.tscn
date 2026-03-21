@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqcs7lgnxm838"]
+
+[ext_resource type="Texture2D" uid="uid://cohgaf5fmmjhf" path="res://assets/images/level 3/starfish frame.png" id="1_ltole"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lj31h"]
+size = Vector2(750.0001, 660.0001)
+
+[node name="Starfish Frame" type="Sprite2D"]
+texture_filter = 1
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_ltole")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(6.377697e-05, 4.708767e-05)
+scale = Vector2(0.99999946, 0.99999946)
+shape = SubResource("RectangleShape2D_lj31h")

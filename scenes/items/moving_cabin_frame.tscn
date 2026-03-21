@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=3 uid="uid://cqsbh7avvexoo"]
+
+[ext_resource type="Texture2D" uid="uid://mu3ctee6rowr" path="res://assets/images/level 3/cabin frame.png" id="1_5a5yx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iexbk"]
+size = Vector2(760.00024, 660.00024)
+
+[sub_resource type="Animation" id="Animation_afg43"]
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_mb26n"]
+resource_name = "move"
+length = 5.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.5, 5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(200, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pgg5x"]
+_data = {
+&"RESET": SubResource("Animation_afg43"),
+&"move": SubResource("Animation_mb26n")
+}
+
+[node name="Moving Cabin Frame" type="Node2D"]
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
+scale = Vector2(0.1, 0.1)
+
+[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D"]
+texture_filter = 1
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("1_5a5yx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D"]
+position = Vector2(-9.5367395e-06, 7.629393e-05)
+scale = Vector2(0.9999994, 0.9999994)
+shape = SubResource("RectangleShape2D_iexbk")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D"]
+libraries = {
+&"": SubResource("AnimationLibrary_pgg5x")
+}
+autoplay = "move"

@@ -48,3 +48,12 @@ func _physics_process(delta: float) -> void:
 func dying() -> void:
 	animated_sprite_2d.animation = "dying"
 	alive = false
+
+var normal_speed = 500
+var speed = 500
+
+func set_slow(is_slow):
+	if is_slow:
+		speed = normal_speed * 0.1
+	else:
+		speed = normal_speed

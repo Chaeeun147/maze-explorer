@@ -200,7 +200,7 @@ sprite_frames = SubResource("SpriteFrames_fi4oi")
 autoplay = "default"
 
 [node name="ControlSign" type="Sprite2D" parent="."]
-position = Vector2(641, 142.00002)
+position = Vector2(634.00006, 142.00002)
 scale = Vector2(0.32102275, 0.32102275)
 texture = ExtResource("6_tkosg")
 
